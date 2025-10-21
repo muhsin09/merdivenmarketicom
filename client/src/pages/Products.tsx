@@ -91,10 +91,20 @@ export default function Products() {
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filteredProducts.map((product) => (
                   <Card key={product.id} className="group overflow-hidden border-2 hover:border-primary/50 transition-all hover:shadow-xl">
-                    <div className="aspect-square bg-gradient-to-br from-muted to-muted/50 flex items-center justify-center relative overflow-hidden">
-                      <div className="text-8xl group-hover:scale-110 transition-transform duration-300">
-                        {product.images[0]}
-                      </div>
+                    <div className="aspect-square bg-white relative overflow-hidden">
+                      {product.images && product.images.length > 0 ? (
+                        <img
+                          src={product.images[0]}
+                          alt={product.name}
+                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                        />
+                      ) : (
+                        <div className="w-full h-full bg-gradient-to-br from-muted to-muted/50 flex items-center justify-center">
+                          <div className="text-8xl group-hover:scale-110 transition-transform duration-300">
+                            📦
+                          </div>
+                        </div>
+                      )}
                       <div className="absolute top-4 right-4">
                         <span className="inline-block px-3 py-1 bg-primary text-primary-foreground text-xs font-medium rounded-full">
                           {product.category}

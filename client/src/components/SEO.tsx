@@ -11,7 +11,7 @@ interface SEOProps {
 export default function SEO({
   title = "Merdiven Marketi - Profesyonel Merdiven Çözümleri",
   description = "Modern tasarım ve üstün kalite ile özel olarak tasarlanmış merdiven çözümleri. Ahşap, metal, cam ve özel tasarım merdivenler.",
-  keywords = "merdiven, ahşap merdiven, metal merdiven, cam merdiven, spiral merdiven, özel tasarım merdiven, merdiven fiyatları, merdiven modelleri",
+  keywords = "merdiven, ahşap merdiven, boyacı merdiveni, çift çıkışlı merdiven, merdiven fiyatları, merdiven modelleri",
   ogImage = "/og-image.jpg",
   canonical
 }: SEOProps) {
@@ -23,13 +23,13 @@ export default function SEO({
     const updateMetaTag = (name: string, content: string, isProperty = false) => {
       const attribute = isProperty ? "property" : "name";
       let element = document.querySelector(`meta[${attribute}="${name}"]`);
-      
+
       if (!element) {
         element = document.createElement("meta");
         element.setAttribute(attribute, name);
         document.head.appendChild(element);
       }
-      
+
       element.setAttribute("content", content);
     };
 
