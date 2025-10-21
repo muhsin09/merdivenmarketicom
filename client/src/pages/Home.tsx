@@ -1,0 +1,188 @@
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
+import { ArrowRight, CheckCircle, Shield, Zap, Award, Users, TrendingUp, DollarSign, Wrench, Clock } from "lucide-react";
+import { Link } from "wouter";
+
+export default function Home() {
+  return (
+    <div className="min-h-screen flex flex-col">
+        <SEO 
+        title="İtimat Ahşap Merdiven - Çift Çıkışlı Ahşap Merdiven"
+        description="20+ yıllık tecrübe ile kaliteli çift çıkışlı ahşap merdiven üretimi. 3+3'ten 10+10'a kadar geniş model yelpazesi."
+        keywords="çift çıkışlı merdiven, ahşap merdiven, A tipi merdiven, 3+3 merdiven, merdiven fiyatları, fırınlanmış kayın"
+      />
+      <Header />
+      
+      <main className="flex-1">
+        {/* Hero Section */}
+        <section className="relative py-20 lg:py-32 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-accent via-background to-background -z-10" />
+          <div className="container">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="space-y-8">
+                <div className="inline-block">
+                  <span className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                    <Zap className="h-4 w-4 mr-2" />
+                    Profesyonel Merdiven Çözümleri
+                  </span>
+                </div>
+                <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
+                  Kaliteli{" "}
+                  <span className="text-primary">Çift Çıkışlı</span>{" "}
+                  Ahşap Merdiven
+                </h1>
+                <p className="text-lg text-muted-foreground">
+                  20+ yıllık tecrübemiz ile üretilen, pratik ve güvenli çift çıkışlı ahşap merdivenler. 
+                  3+3'ten 10+10'a kadar geniş model yelpazesi ile her ihtiyaca uygun çözümler.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link href="/products">
+                    <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8">
+                      Ürünleri İncele
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Button>
+                  </Link>
+                  <Link href="/contact">
+                    <Button size="lg" variant="outline" className="text-lg px-8">
+                      Ücretsiz Teklif Al
+                    </Button>
+                  </Link>
+                </div>
+                <div className="flex items-center space-x-8 pt-4">
+                  <div>
+                    <div className="text-3xl font-bold text-primary">20+</div>
+                    <div className="text-sm text-muted-foreground">Yıllık Tecrübe</div>
+                  </div>
+                  <div>
+                    <div className="text-3xl font-bold text-primary">8</div>
+                    <div className="text-sm text-muted-foreground">Farklı Model</div>
+                  </div>
+                  <div>
+                    <div className="text-3xl font-bold text-primary">%100</div>
+                    <div className="text-sm text-muted-foreground">Ahşap Kalite</div>
+                  </div>
+                </div>
+              </div>
+              <div className="relative">
+                <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+                  <img 
+                    src="/images/products/TopluUrunlerDikeyYandan3.jpg" 
+                    alt="Çift Çıkışlı Ahşap Merdivenler" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {/* Decorative Elements */}
+                <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-3xl" />
+                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-secondary/20 rounded-full blur-3xl" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Features Section */}
+        <section className="py-20 bg-muted/30">
+          <div className="container">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+                Neden İtimat Ahşap Merdiven?
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                20+ yıllık tecrübemiz ve kalite anlayışımızla çift çıkışlı ahşap merdiven üretiminde uzmanlaştık
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
+                <CardContent className="pt-6 space-y-4">
+                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <CheckCircle className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold">Özel Tasarım</h3>
+                  <p className="text-muted-foreground">
+                    Mekanınıza özel, ölçüye göre tasarlanmış merdiven çözümleri üretiyoruz.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
+                <CardContent className="pt-6 space-y-4">
+                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <Clock className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold">Hızlı Teslimat</h3>
+                  <p className="text-muted-foreground">
+                    Projelerinizi zamanında teslim etme garantisi ile çalışıyoruz.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
+                <CardContent className="pt-6 space-y-4">
+                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <Users className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold">Uzman Ekip</h3>
+                  <p className="text-muted-foreground">
+                    20+ yıllık tecrübeye sahip uzman ekibimizle hizmetinizdeyiz.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
+                <CardContent className="pt-6 space-y-4">
+                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <Zap className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold">Uygun Fiyat</h3>
+                  <p className="text-muted-foreground">
+                    Kaliteden ödün vermeden, rekabetçi fiyatlarla hizmet veriyoruz.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
+                <CardContent className="pt-6 space-y-4">
+                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <DollarSign className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold">Elektrik İletmez</h3>
+                  <p className="text-muted-foreground">
+                    Ahşap malzemesi sayesinde elektrik iletmez, güvenli kullanım sağlar.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-20">
+          <div className="container">
+            <Card className="bg-gradient-to-r from-secondary to-secondary/90 border-0 overflow-hidden relative">
+              <div className="absolute inset-0 bg-grid-white/10" />
+              <CardContent className="relative py-16 px-8 text-center text-secondary-foreground">
+                <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+                  Hayalinizdeki Merdiveni Birlikte Tasarlayalım
+                </h2>
+                <p className="text-lg mb-8 text-secondary-foreground/90 max-w-2xl mx-auto">
+                  Ücretsiz keşif ve danışmanlık hizmeti için hemen iletişime geçin
+                </p>
+                <Link href="/contact">
+                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8">
+                    Ücretsiz Teklif Al
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </div>
+  );
+}
+
