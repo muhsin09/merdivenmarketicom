@@ -5,40 +5,33 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import { useState } from "react";
-import { toast } from "sonner";
+ 
 
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
     subject: "",
     message: ""
   });
 
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission (in production, this would be an API call)
-    try {
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-      
-      // Log form data (in production, send to backend)
-      console.log("Form submitted:", formData);
-      
-      toast.success("Mesajınız alındı! En kısa sürede size dönüş yapacağız.");
-      setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
-    } catch (error) {
-      toast.error("Bir hata oluştu. Lütfen tekrar deneyin.");
-    } finally {
-      setIsSubmitting(false);
-    }
+  const handleWhatsAppSend = () => {
+    const phoneNumber = "905368104278"; // Country code + phone number without leading +
+    const lines = [
+      "Merhaba, web sitesinden iletişime geçiyorum.",
+      formData.name ? `Ad Soyad: ${formData.name}` : undefined,
+      formData.email ? `E-posta: ${formData.email}` : undefined,
+      formData.subject ? `Konu: ${formData.subject}` : undefined,
+      formData.message ? `Mesaj: ${formData.message}` : undefined,
+    ].filter(Boolean) as string[];
+    const text = lines.join("\n");
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank", "noopener,noreferrer");
   };
+
+  
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -53,7 +46,7 @@ export default function Contact() {
       
       <main className="flex-1">
         {/* Page Header */}
-        <section className="py-16 bg-gradient-to-br from-accent via-background to-background">
+        <section className="py-12 sm:py-16 bg-gradient-to-br from-accent via-background to-background">
           <div className="container">
             <div className="max-w-3xl">
               <h1 className="text-4xl lg:text-5xl font-bold mb-4">
@@ -67,11 +60,11 @@ export default function Contact() {
         </section>
 
         {/* Contact Info & Form */}
-        <section className="py-16">
+        <section className="py-12 sm:py-16">
           <div className="container">
-            <div className="grid lg:grid-cols-3 gap-8">
+            <div className="grid gap-6 lg:grid-cols-3 lg:gap-8">
               {/* Contact Information */}
-              <div className="space-y-6">
+              <div className="space-y-4 lg:space-y-6">
                 <Card className="border-2">
                   <CardContent className="pt-6 space-y-4">
                     <div className="flex items-start space-x-4">
@@ -140,21 +133,20 @@ export default function Contact() {
               <div className="lg:col-span-2">
                 <Card className="border-2">
                   <CardContent className="pt-6">
-                    <form onSubmit={handleSubmit} className="space-y-6">
-                      <div className="grid md:grid-cols-2 gap-6">
+                    <form className="space-y-6">
+                      <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
                         <div className="space-y-2">
-                          <Label htmlFor="name">Ad Soyad *</Label>
+                          <Label htmlFor="name">Ad Soyad</Label>
                           <Input
                             id="name"
                             name="name"
                             value={formData.name}
                             onChange={handleChange}
                             placeholder="Adınız ve soyadınız"
-                            required
                           />
                         </div>
                         <div className="space-y-2">
-                          <Label htmlFor="email">E-posta *</Label>
+                          <Label htmlFor="email">E-posta</Label>
                           <Input
                             id="email"
                             name="email"
@@ -162,38 +154,23 @@ export default function Contact() {
                             value={formData.email}
                             onChange={handleChange}
                             placeholder="ornek@email.com"
-                            required
-                          />
-                        </div>
-                      </div>
-
-                      <div className="grid md:grid-cols-2 gap-6">
-                        <div className="space-y-2">
-                          <Label htmlFor="phone">Telefon</Label>
-                          <Input
-                            id="phone"
-                            name="phone"
-                            type="tel"
-                            value={formData.phone}
-                            onChange={handleChange}
-                            placeholder="+90 XXX XXX XX XX"
-                          />
-                        </div>
-                        <div className="space-y-2">
-                          <Label htmlFor="subject">Konu *</Label>
-                          <Input
-                            id="subject"
-                            name="subject"
-                            value={formData.subject}
-                            onChange={handleChange}
-                            placeholder="Mesajınızın konusu"
-                            required
                           />
                         </div>
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="message">Mesajınız *</Label>
+                        <Label htmlFor="subject">Konu</Label>
+                        <Input
+                          id="subject"
+                          name="subject"
+                          value={formData.subject}
+                          onChange={handleChange}
+                          placeholder="Mesajınızın konusu"
+                        />
+                      </div>
+
+                      <div className="space-y-2">
+                        <Label htmlFor="message">Mesajınız</Label>
                         <Textarea
                           id="message"
                           name="message"
@@ -201,22 +178,21 @@ export default function Contact() {
                           onChange={handleChange}
                           placeholder="Mesajınızı buraya yazın..."
                           rows={8}
-                          required
                         />
                       </div>
 
-                      <Button 
-                        type="submit" 
-                        size="lg" 
-                        className="w-full md:w-auto bg-primary hover:bg-primary/90"
-                        disabled={isSubmitting}
+                      
+                      <Button
+                        type="button"
+                        size="lg"
+                        variant="outline"
+                        className="w-full md:w-auto gap-2 border-[#25D366] text-[#25D366] hover:bg-[#25D366]/10"
+                        onClick={handleWhatsAppSend}
                       >
-                        {isSubmitting ? "Gönderiliyor..." : "Mesaj Gönder"}
+                        <MessageCircle className="h-5 w-5" />
+                        WhatsApp ile Gönder
                       </Button>
 
-                      <p className="text-sm text-muted-foreground">
-                        * işaretli alanlar zorunludur
-                      </p>
                     </form>
                   </CardContent>
                 </Card>
@@ -226,7 +202,7 @@ export default function Contact() {
         </section>
 
         {/* Map Section */}
-        <section className="py-16 bg-muted/30">
+        <section className="py-12 sm:py-16 bg-muted/30">
           <div className="container">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-8">
@@ -236,8 +212,8 @@ export default function Contact() {
                 </p>
               </div>
               
-              <Card className="overflow-hidden border-2">
-                <div className="aspect-video">
+              <Card className="overflow-hidden border-2 relative">
+                <div className="aspect-video relative">
                   <iframe
                     src="https://www.google.com/maps?q=XV7W%2B27%20Alt%C4%B1nda%C4%9F%2C%20Ankara&output=embed"
                     width="100%"
@@ -255,18 +231,21 @@ export default function Contact() {
               <div className="mt-6 text-center">
                 <Button 
                   asChild
-                  variant="outline"
-                  className="gap-2"
+                  size="lg"
+                  className="gap-3 bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   <a 
                     href="https://www.google.com/maps/dir/?api=1&destination=XV7W%2B27%20Alt%C4%B1nda%C4%9F%2C%20Ankara"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <MapPin className="h-4 w-4" />
-                    Yol Tarifi Al
+                    <MapPin className="h-5 w-5" />
+                     Yol Tarifi Al
                   </a>
                 </Button>
+                <p className="text-sm text-muted-foreground mt-2">
+                  Konumumuza kolayca ulaşın
+                </p>
               </div>
             </div>
           </div>
