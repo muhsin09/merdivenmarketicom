@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Menu, Phone, Mail } from "lucide-react";
+import { Menu, Phone } from "lucide-react";
 import { Link } from "wouter";
 import { useState } from "react";
 
@@ -13,14 +13,18 @@ export default function Header() {
           {/* Logo */}
           <Link href="/">
             <div className="flex items-center space-x-3 cursor-pointer">
-              <img 
-                src="/images/logo.jpg" 
-                alt="İtimat Ahşap Merdiven" 
+              <img
+                src="/images/logo.jpg"
+                alt="İtimat Ahşap Merdiven"
                 className="h-12 w-12 rounded-lg object-cover"
               />
               <div className="flex flex-col">
-                <span className="text-xl font-bold text-foreground">İtimat Ahşap Merdiven</span>
-                <span className="text-xs text-muted-foreground">20+ Yıllık Tecrübe</span>
+                <span className="text-xl font-bold text-foreground">
+                  İtimat Ahşap Merdiven
+                </span>
+                <span className="text-xs text-muted-foreground">
+                  20+ Yıllık Tecrübe
+                </span>
               </div>
             </div>
           </Link>
@@ -53,7 +57,9 @@ export default function Header() {
           <div className="hidden lg:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
               <Phone className="h-4 w-4" />
-              <span>+90 536 810 42 78</span>
+              <a href="tel:+905368104278" className="hover:underline">
+                +90 536 810 42 78
+              </a>
             </div>
             <Link href="/contact">
               <Button className="bg-primary hover:bg-primary/90">
@@ -105,4 +111,3 @@ export default function Header() {
     </header>
   );
 }
-

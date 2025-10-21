@@ -5,16 +5,15 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
+import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { useState } from "react";
- 
 
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     subject: "",
-    message: ""
+    message: "",
   });
 
   const handleWhatsAppSend = () => {
@@ -31,29 +30,28 @@ export default function Contact() {
     window.open(url, "_blank", "noopener,noreferrer");
   };
 
-  
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      
+
       <main className="flex-1">
         {/* Page Header */}
         <section className="py-12 sm:py-16 bg-gradient-to-br from-accent via-background to-background">
           <div className="container">
             <div className="max-w-3xl">
-              <h1 className="text-4xl lg:text-5xl font-bold mb-4">
-                İletişim
-              </h1>
+              <h1 className="text-4xl lg:text-5xl font-bold mb-4">İletişim</h1>
               <p className="text-lg text-muted-foreground">
-                Sorularınız için bize ulaşın, size yardımcı olmaktan mutluluk duyarız
+                Sorularınız için bize ulaşın, size yardımcı olmaktan mutluluk
+                duyarız
               </p>
             </div>
           </div>
@@ -73,7 +71,12 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className="font-semibold mb-1">Telefon</h3>
-                        <p className="text-sm text-muted-foreground">+90 536 810 42 78</p>
+                        <a
+                          href="tel:+905368104278"
+                          className="text-sm text-muted-foreground hover:underline"
+                        >
+                          +90 536 810 42 78
+                        </a>
                       </div>
                     </div>
                   </CardContent>
@@ -87,7 +90,9 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className="font-semibold mb-1">E-posta</h3>
-                        <p className="text-sm text-muted-foreground">itimatahsapmerdiven@gmail.com</p>
+                        <p className="text-sm text-muted-foreground">
+                          itimatahsapmerdiven@gmail.com
+                        </p>
                       </div>
                     </div>
                   </CardContent>
@@ -102,7 +107,8 @@ export default function Contact() {
                       <div>
                         <h3 className="font-semibold mb-1">Adres</h3>
                         <p className="text-sm text-muted-foreground">
-                          Önder Mah. Ulubat Sk. No:69 Kat:2<br />
+                          Önder Mah. Ulubat Sk. No:69 Kat:2
+                          <br />
                           Siteler 06360 Altındağ/Ankara
                         </p>
                       </div>
@@ -119,8 +125,10 @@ export default function Contact() {
                       <div>
                         <h3 className="font-semibold mb-1">Çalışma Saatleri</h3>
                         <p className="text-sm text-muted-foreground">
-                          Pazartesi - Cuma: 09:00 - 18:00<br />
-                          Cumartesi: 09:00 - 14:00<br />
+                          Pazartesi - Cuma: 09:00 - 18:00
+                          <br />
+                          Cumartesi: 09:00 - 14:00
+                          <br />
                           Pazar: Kapalı
                         </p>
                       </div>
@@ -181,7 +189,6 @@ export default function Contact() {
                         />
                       </div>
 
-                      
                       <Button
                         type="button"
                         size="lg"
@@ -192,7 +199,6 @@ export default function Contact() {
                         <MessageCircle className="h-5 w-5" />
                         WhatsApp ile Gönder
                       </Button>
-
                     </form>
                   </CardContent>
                 </Card>
@@ -208,10 +214,11 @@ export default function Contact() {
               <div className="text-center mb-8">
                 <h2 className="text-3xl font-bold mb-4">Konumumuz</h2>
                 <p className="text-muted-foreground">
-                  Önder Mah. Ulubat Sk. No:69 Kat:2, Siteler 06360 Altındağ/Ankara
+                  Önder Mah. Ulubat Sk. No:69 Kat:2, Siteler 06360
+                  Altındağ/Ankara
                 </p>
               </div>
-              
+
               <Card className="overflow-hidden border-2 relative">
                 <div className="aspect-video relative">
                   <iframe
@@ -227,20 +234,20 @@ export default function Contact() {
                   />
                 </div>
               </Card>
-              
+
               <div className="mt-6 text-center">
-                <Button 
+                <Button
                   asChild
                   size="lg"
                   className="gap-3 bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  <a 
+                  <a
                     href="https://www.google.com/maps/dir/?api=1&destination=XV7W%2B27%20Alt%C4%B1nda%C4%9F%2C%20Ankara"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <MapPin className="h-5 w-5" />
-                     Yol Tarifi Al
+                    Yol Tarifi Al
                   </a>
                 </Button>
                 <p className="text-sm text-muted-foreground mt-2">
@@ -256,4 +263,3 @@ export default function Contact() {
     </div>
   );
 }
-

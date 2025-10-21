@@ -75,17 +75,17 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="#" className="text-sm text-secondary-foreground/80 hover:text-primary transition-colors">
+                <a href="/products" className="text-sm text-secondary-foreground/80 hover:text-primary transition-colors">
                   3+3 Model
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-secondary-foreground/80 hover:text-primary transition-colors">
+                <a href="/products" className="text-sm text-secondary-foreground/80 hover:text-primary transition-colors">
                   4+4 Model
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-secondary-foreground/80 hover:text-primary transition-colors">
+                <a href="/products" className="text-sm text-secondary-foreground/80 hover:text-primary transition-colors">
                   5+5 ve Üstü Modeller
                 </a>
               </li>
@@ -96,16 +96,16 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">İletişim</h3>
             <ul className="space-y-3">
+              <li className="flex items-center space-x-3">
+                <Phone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <a href="tel:+905368104278" className="text-sm text-secondary-foreground/80 hover:underline">
+                  +90 536 810 42 78
+                </a>
+              </li>
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                 <span className="text-sm text-secondary-foreground/80">
                   Önder Mah. Ulubat Sk. No:69 Kat:2<br />Siteler 06360 Altındağ/Ankara
-                </span>
-              </li>
-              <li className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                <span className="text-sm text-secondary-foreground/80">
-                  +90 536 810 42 78
                 </span>
               </li>
               <li className="flex items-center space-x-3">
