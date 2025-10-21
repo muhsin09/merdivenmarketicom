@@ -135,10 +135,6 @@ export default function ProductDetail() {
                           <dt className="font-medium">Taşıma Kapasitesi</dt>
                           <dd className="text-muted-foreground">{product.specifications.loadCapacity}</dd>
                         </div>
-                        <div className="flex justify-between py-3">
-                          <dt className="font-medium">Garanti</dt>
-                          <dd className="text-muted-foreground">{product.specifications.warranty}</dd>
-                        </div>
                       </dl>
                     </CardContent>
                   </Card>

@@ -27,9 +27,9 @@
     "price": "3.500 TL",
     "featured": true,
     "images": [
-      "/images/products/3+3AcikOnden.jpg",
-      "/images/products/3+3AcikYandan.jpg",
-      "/images/products/3+3KatlanmışDikeyYandan.jpg"
+      "/images/products/3+3/3+3_acik_onden_u.jpg",
+      "/images/products/3+3/3+3_acik_yandan_u.jpg",
+      "/images/products/3+3/3+3_katlanmis_dikey_yandan_u.jpg"
     ]
   },
   {
@@ -60,9 +60,9 @@
     "price": "4.200 TL",
     "featured": true,
     "images": [
-      "/images/products/4+4AcikOnden.jpg",
-      "/images/products/4+4AcikYandan.jpg",
-      "/images/products/4+4KatlanmisDikeyYandan.jpg"
+      "/images/products/4+4/4+4_acik_onden_u.jpg",
+      "/images/products/4+4/4+4_acik_yandan_u.jpg",
+      "/images/products/4+4/4+4_katlanmis_dikey_yandan_u.jpg"
     ]
   },
   {
@@ -93,9 +93,9 @@
     "price": "5.000 TL",
     "featured": true,
     "images": [
-      "/images/products/5+5AcikOnden.jpg",
-      "/images/products/5+5AcikYandan.jpg",
-      "/images/products/5+5KatlanmisDikeyYandan.jpg"
+      "/images/products/5+5/5+5_acik_onden_u.jpg",
+      "/images/products/5+5/5+5_acik_yandan_u.jpg",
+      "/images/products/5+5/5+5_katlanmis_dikey_yandan_u.jpg"
     ]
   },
   {
@@ -126,9 +126,9 @@
     "price": "5.800 TL",
     "featured": true,
     "images": [
-      "/images/products/6+6AcikOnden.jpg",
-      "/images/products/6+6AcikYandan.jpg",
-      "/images/products/6+6KatlanmisDikeyYandan.jpg"
+      "/images/products/6+6/6+6_acik_onden_u.jpg",
+      "/images/products/6+6/6+6_acik_yandan_u.jpg",
+      "/images/products/6+6/6+6_katlanmis_dikey_yandan_u.jpg"
     ]
   },
   {
@@ -159,9 +159,9 @@
     "price": "6.500 TL",
     "featured": false,
     "images": [
-      "/images/products/7+7AcikOnden.jpg",
-      "/images/products/7+7AcikYandan.jpg.jpg",
-      "/images/products/7+7KapaliYandan.jpg"
+      "/images/products/7+7/7+7_acik_onden_u.jpg",
+      "/images/products/7+7/7+7_acik_yandan_u.jpg",
+      "/images/products/7+7/7+7_katlanmis_dikey_yandan_u.jpg"
     ]
   },
   {
@@ -192,9 +192,9 @@
     "price": "7.200 TL",
     "featured": false,
     "images": [
-      "/images/products/8+8AcikOnden.jpg",
-      "/images/products/8+8AcikYandan.jpg",
-      "/images/products/8+8KapaliYandan.jpg"
+      "/images/products/8+8/8+8_acik_onden_u.jpg",
+      "/images/products/8+8/8+8_acik_yandan_u.jpg",
+      "/images/products/8+8/8+8_katlanmis_dikey_yandan_u.jpg"
     ]
   },
   {
