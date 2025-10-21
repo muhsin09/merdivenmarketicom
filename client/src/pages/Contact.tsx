@@ -228,14 +228,47 @@ export default function Contact() {
         {/* Map Section */}
         <section className="py-16 bg-muted/30">
           <div className="container">
-            <Card className="overflow-hidden">
-              <div className="aspect-video bg-gradient-to-br from-muted to-muted/50 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <MapPin className="h-16 w-16 text-primary mx-auto" />
-                  <p className="text-muted-foreground">Harita entegrasyonu eklenecek</p>
-                </div>
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-8">
+                <h2 className="text-3xl font-bold mb-4">Konumumuz</h2>
+                <p className="text-muted-foreground">
+                  Önder Mah. Ulubat Sk. No:69 Kat:2, Siteler 06360 Altındağ/Ankara
+                </p>
               </div>
-            </Card>
+              
+              <Card className="overflow-hidden border-2">
+                <div className="aspect-video">
+                  <iframe
+                    src="https://www.google.com/maps?q=XV7W%2B27%20Alt%C4%B1nda%C4%9F%2C%20Ankara&output=embed"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="BEREKET AHŞAP KAPI MUTFAK ORMAN ÜRÜNLERİ LTD. ŞTİ. Konumu"
+                    className="w-full h-full"
+                  />
+                </div>
+              </Card>
+              
+              <div className="mt-6 text-center">
+                <Button 
+                  asChild
+                  variant="outline"
+                  className="gap-2"
+                >
+                  <a 
+                    href="https://www.google.com/maps/dir/?api=1&destination=XV7W%2B27%20Alt%C4%B1nda%C4%9F%2C%20Ankara"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <MapPin className="h-4 w-4" />
+                    Yol Tarifi Al
+                  </a>
+                </Button>
+              </div>
+            </div>
           </div>
         </section>
       </main>
