@@ -100,7 +100,13 @@ export default function Header() {
                 İletişim
               </a>
             </Link>
-            <div className="pt-4 border-t">
+            <div className="pt-4 border-t space-y-3">
+              <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+                <Phone className="h-4 w-4" />
+                <a href="tel:+905368104278" className="hover:underline">
+                  +90 536 810 42 78
+                </a>
+              </div>
               <Button className="w-full bg-primary hover:bg-primary/90">
                 Teklif Al
               </Button>

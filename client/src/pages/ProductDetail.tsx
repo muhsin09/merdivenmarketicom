@@ -256,32 +256,43 @@ export default function ProductDetail() {
                           <dt className="font-medium">Taşıma Kapasitesi</dt>
                           <dd className="text-muted-foreground">{product.specifications.loadCapacity}</dd>
                         </div>
+                        {product.specifications.stepCount && (
+                          <div className="flex justify-between py-3 border-b">
+                            <dt className="font-medium">Basamak Sayısı</dt>
+                            <dd className="text-muted-foreground">{product.specifications.stepCount}</dd>
+                          </div>
+                        )}
+                        {product.specifications.closedHeight && (
+                          <div className="flex justify-between py-3 border-b">
+                            <dt className="font-medium">Kapalı Halde Boyut (Yükseklik)</dt>
+                            <dd className="text-muted-foreground">{product.specifications.closedHeight}</dd>
+                          </div>
+                        )}
+                        {product.specifications.openHeight && (
+                          <div className="flex justify-between py-3 border-b">
+                            <dt className="font-medium">Açık Halde Yükseklik (Kullanım Yüksekliği)</dt>
+                            <dd className="text-muted-foreground">{product.specifications.openHeight}</dd>
+                          </div>
+                        )}
+                        {product.specifications.baseWidth && (
+                          <div className="flex justify-between py-3 border-b">
+                            <dt className="font-medium">Açık Halde Taban Genişliği</dt>
+                            <dd className="text-muted-foreground">{product.specifications.baseWidth}</dd>
+                          </div>
+                        )}
+                        {product.specifications.electricInsulation && (
+                          <div className="flex justify-between py-3 border-b">
+                            <dt className="font-medium">Elektrik İletkenliği</dt>
+                            <dd className="text-muted-foreground">{product.specifications.electricInsulation}</dd>
+                          </div>
+                        )}
+                        {product.specifications.warranty && (
+                          <div className="flex justify-between py-3">
+                            <dt className="font-medium">Garanti</dt>
+                            <dd className="text-muted-foreground">{product.specifications.warranty}</dd>
+                          </div>
+                        )}
                       </dl>
-                    </CardContent>
-                  </Card>
-                </div>
-
-                {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <Link href="/contact">
-                    <Button size="lg" className="w-full sm:w-auto bg-primary hover:bg-primary/90">
-                      Teklif Al
-                    </Button>
-                  </Link>
-                  <Link href="/contact">
-                    <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                      Bilgi İste
-                    </Button>
-                  </Link>
-                </div>
-
-                {/* Info Cards */}
-                <div className="flex justify-center pt-8">
-                  <Card className="border-2">
-                    <CardContent className="pt-6 text-center space-y-2">
-                      <Zap className="h-8 w-8 text-primary mx-auto" />
-                      <div className="text-sm font-medium">Teslimat</div>
-                      <div className="text-xs text-muted-foreground">Hızlı</div>
                     </CardContent>
                   </Card>
                 </div>

@@ -11,6 +11,11 @@ export interface Product {
     finish: string;
     loadCapacity: string;
     warranty: string;
+    stepCount?: string;
+    electricInsulation?: string;
+    closedHeight?: string;
+    openHeight?: string;
+    baseWidth?: string;
   };
   price: string;
   featured: boolean;

@@ -22,7 +22,10 @@
       "loadCapacity": "Profesyonel kullanıma uygun",
       "warranty": "2 yıl",
       "stepCount": "3+3 basamak",
-      "electricInsulation": "Evet"
+      "electricInsulation": "Evet",
+      "closedHeight": "98 cm",
+      "openHeight": "87 cm",
+      "baseWidth": "70 cm"
     },
     "price": "2.144 TL",
     "featured": true,
@@ -56,7 +59,10 @@
       "loadCapacity": "Profesyonel kullanıma uygun",
       "warranty": "2 yıl",
       "stepCount": "4+4 basamak",
-      "electricInsulation": "Evet"
+      "electricInsulation": "Evet",
+      "closedHeight": "128 cm",
+      "openHeight": "117 cm",
+      "baseWidth": "91 cm"
     },
     "price": "2.578 TL",
     "featured": true,
@@ -90,7 +96,10 @@
       "loadCapacity": "Profesyonel kullanıma uygun",
       "warranty": "2 yıl",
       "stepCount": "5+5 basamak",
-      "electricInsulation": "Evet"
+      "electricInsulation": "Evet",
+      "closedHeight": "156 cm",
+      "openHeight": "145 cm",
+      "baseWidth": "113 cm"
     },
     "price": "3.164 TL",
     "featured": true,
@@ -124,7 +133,10 @@
       "loadCapacity": "Profesyonel kullanıma uygun",
       "warranty": "2 yıl",
       "stepCount": "6+6 basamak",
-      "electricInsulation": "Evet"
+      "electricInsulation": "Evet",
+      "closedHeight": "184 cm",
+      "openHeight": "174 cm",
+      "baseWidth": "144 cm"
     },
     "price": "3.721 TL",
     "featured": true,
@@ -158,7 +170,10 @@
       "loadCapacity": "Profesyonel kullanıma uygun",
       "warranty": "2 yıl",
       "stepCount": "7+7 basamak",
-      "electricInsulation": "Evet"
+      "electricInsulation": "Evet",
+      "closedHeight": "214 cm",
+      "openHeight": "204 cm",
+      "baseWidth": "157 cm"
     },
     "price": "4.352 TL",
     "featured": false,
@@ -192,7 +207,10 @@
       "loadCapacity": "Profesyonel kullanıma uygun",
       "warranty": "2 yıl",
       "stepCount": "8+8 basamak",
-      "electricInsulation": "Evet"
+      "electricInsulation": "Evet",
+      "closedHeight": "244 cm",
+      "openHeight": "233 cm",
+      "baseWidth": "180 cm"
     },
     "price": "5.421 TL",
     "featured": false,
@@ -225,11 +243,16 @@
       "loadCapacity": "Profesyonel kullanıma uygun",
       "warranty": "2 yıl",
       "stepCount": "9+9 basamak",
-      "electricInsulation": "Evet"
+      "electricInsulation": "Evet",
+      "closedHeight": "273 cm",
+      "openHeight": "262 cm",
+      "baseWidth": "196 cm"
     },
     "price": "6.306 TL",
     "featured": false,
     "images": [
+      "/images/products/9+9/9+9_acik_yandan_u.jpg",
+      "/images/products/9+9/9+9_katlanmis_dikey_yandan_u.jpg",
       "/images/products/9+9AcikYandan.jpg",
       "/images/products/9+9KapaliYandan.jpg"
     ]
@@ -257,11 +280,16 @@
       "loadCapacity": "Profesyonel kullanıma uygun",
       "warranty": "2 yıl",
       "stepCount": "10+10 basamak",
-      "electricInsulation": "Evet"
+      "electricInsulation": "Evet",
+      "closedHeight": "300 cm",
+      "openHeight": "290 cm",
+      "baseWidth": "237 cm"
     },
     "price": "7.239 TL",
     "featured": false,
     "images": [
+      "/images/products/9+9AcikYandan.jpg",
+      "/images/products/9+9KapaliYandan.jpg",
       "/images/products/topluxyz.jpg"
     ]
   }
