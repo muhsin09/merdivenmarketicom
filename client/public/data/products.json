@@ -24,11 +24,12 @@
       "stepCount": "3+3 basamak",
       "electricInsulation": "Evet"
     },
-    "price": "3.500 TL",
+    "price": "2.144 TL",
     "featured": true,
     "images": [
       "/images/products/3+3/3+3_acik_onden_u.jpg",
       "/images/products/3+3/3+3_acik_yandan_u.jpg",
+      "/images/products/3+3/3+3_acik_yandan_u2.jpg",
       "/images/products/3+3/3+3_katlanmis_dikey_yandan_u.jpg"
     ]
   },
@@ -57,11 +58,12 @@
       "stepCount": "4+4 basamak",
       "electricInsulation": "Evet"
     },
-    "price": "4.200 TL",
+    "price": "2.578 TL",
     "featured": true,
     "images": [
       "/images/products/4+4/4+4_acik_onden_u.jpg",
       "/images/products/4+4/4+4_acik_yandan_u.jpg",
+      "/images/products/4+4/4+4_acik_yandan_u2.jpg",
       "/images/products/4+4/4+4_katlanmis_dikey_yandan_u.jpg"
     ]
   },
@@ -90,11 +92,12 @@
       "stepCount": "5+5 basamak",
       "electricInsulation": "Evet"
     },
-    "price": "5.000 TL",
+    "price": "3.164 TL",
     "featured": true,
     "images": [
       "/images/products/5+5/5+5_acik_onden_u.jpg",
       "/images/products/5+5/5+5_acik_yandan_u.jpg",
+      "/images/products/5+5/5+5_acik_yandan_u2.jpg",
       "/images/products/5+5/5+5_katlanmis_dikey_yandan_u.jpg"
     ]
   },
@@ -123,11 +126,12 @@
       "stepCount": "6+6 basamak",
       "electricInsulation": "Evet"
     },
-    "price": "5.800 TL",
+    "price": "3.721 TL",
     "featured": true,
     "images": [
       "/images/products/6+6/6+6_acik_onden_u.jpg",
       "/images/products/6+6/6+6_acik_yandan_u.jpg",
+      "/images/products/6+6/6+6_acik_yandan_u2.jpg",
       "/images/products/6+6/6+6_katlanmis_dikey_yandan_u.jpg"
     ]
   },
@@ -156,11 +160,12 @@
       "stepCount": "7+7 basamak",
       "electricInsulation": "Evet"
     },
-    "price": "6.500 TL",
+    "price": "4.352 TL",
     "featured": false,
     "images": [
       "/images/products/7+7/7+7_acik_onden_u.jpg",
       "/images/products/7+7/7+7_acik_yandan_u.jpg",
+      "/images/products/7+7/7+7_acik_yandan_u2.jpg",
       "/images/products/7+7/7+7_katlanmis_dikey_yandan_u.jpg"
     ]
   },
@@ -189,7 +194,7 @@
       "stepCount": "8+8 basamak",
       "electricInsulation": "Evet"
     },
-    "price": "7.200 TL",
+    "price": "5.421 TL",
     "featured": false,
     "images": [
       "/images/products/8+8/8+8_acik_onden_u.jpg",
@@ -222,7 +227,7 @@
       "stepCount": "9+9 basamak",
       "electricInsulation": "Evet"
     },
-    "price": "8.000 TL",
+    "price": "6.306 TL",
     "featured": false,
     "images": [
       "/images/products/9+9AcikYandan.jpg",
@@ -254,10 +259,10 @@
       "stepCount": "10+10 basamak",
       "electricInsulation": "Evet"
     },
-    "price": "9.000 TL",
+    "price": "7.239 TL",
     "featured": false,
     "images": [
-      "/images/products/TopluUrunlerDikeyYandan3.jpg"
+      "/images/products/topluxyz.jpg"
     ]
   }
 ]
