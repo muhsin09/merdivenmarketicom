@@ -2,8 +2,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Target, Eye, Award, Users } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
+  const { t } = useTranslation();
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -14,10 +16,10 @@ export default function About() {
           <div className="container">
             <div className="max-w-3xl">
               <h1 className="text-4xl lg:text-5xl font-bold mb-4">
-                Hakkımızda
+                {t("about.pageTitle")}
               </h1>
               <p className="text-lg text-muted-foreground">
-                15 yılı aşkın deneyimimizle sektörün öncü firmalarından biriyiz
+                {t("about.pageDescription")}
               </p>
             </div>
           </div>
@@ -28,26 +30,20 @@ export default function About() {
           <div className="container">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
-                <h2 className="text-3xl font-bold">Hikayemiz</h2>
+                <h2 className="text-3xl font-bold">{t("about.storyTitle")}</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  İtimat Ahşap Merdiven olarak 20+ yıldır çift çıkışlı ahşap merdiven üretimi 
-                  konusunda uzmanlaştık. Ankara Siteler'de bulunan atölyemizde, kaliteli fırınlanmış 
-                  kayın ağacı ve titiz işçilikle üretilen merdivenlerimiz, müşterilerimizin güvenini 
-                  kazanmıştır.
+                  {t("about.story1")}
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  3+3'ten 10+10'a kadar geniş model yelpazemiz ile ev, işyeri ve endüstriyel 
-                  kullanım için uygun çözümler sunuyoruz. Çift çıkışlı sistemimiz sayesinde 
-                  merdivenlerimiz hem pratik hem de güvenlidir.
+                  {t("about.story2")}
                 </p>
                 <div className="grid grid-cols-2 gap-6 pt-4">
                   <div>
-                    <div className="text-4xl font-bold text-primary mb-2">20+</div>
-                    <div className="text-sm text-muted-foreground">Yıllık Tecrübe</div>
+                    <div className="text-sm text-muted-foreground">{t("about.yearsExperience")}</div>
                   </div>
                   <div>
                     <div className="text-4xl font-bold text-primary mb-2">8</div>
-                    <div className="text-sm text-muted-foreground">Farklı Model</div>
+                    <div className="text-sm text-muted-foreground">{t("about.differentModels")}</div>
                   </div>
                 </div>
               </div>
@@ -55,7 +51,7 @@ export default function About() {
                 <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                   <img 
                     src="/images/products/TopluUrunlerDikey2.jpg" 
-                    alt="İtimat Ahşap Merdiven Ürünleri" 
+                    alt={t("about.altImage")} 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -75,11 +71,9 @@ export default function About() {
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
                     <Target className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-2xl font-bold">Misyonumuz</h3>
+                  <h3 className="text-2xl font-bold">{t("about.missionTitle")}</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Müşterilerimize en kaliteli çift çıkışlı ahşap merdiven çözümlerini sunarak 
-                    güvenli ve pratik kullanım sağlamak. Titiz işçilik ve fırınlanmış kayın ağacı ile 
-                    uzun ömürlü ürünler üretmek.
+                    {t("about.missionDescription")}
                   </p>
                 </CardContent>
               </Card>
@@ -89,11 +83,9 @@ export default function About() {
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
                     <Eye className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-2xl font-bold">Vizyonumuz</h3>
+                  <h3 className="text-2xl font-bold">{t("about.visionTitle")}</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Çift çıkışlı ahşap merdiven üretiminde Türkiye'nin en güvenilir markası olmak. 
-                    Kalite standartlarımızı yüksek tutarak müşteri memnuniyetini her zaman ön planda 
-                    tutmak ve sektörün öncü firmalarından biri olmak.
+                    {t("about.visionDescription")}
                   </p>
                 </CardContent>
               </Card>
@@ -106,10 +98,10 @@ export default function About() {
           <div className="container">
             <div className="text-center max-w-3xl mx-auto mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                Değerlerimiz
+                {t("about.valuesTitle")}
               </h2>
               <p className="text-lg text-muted-foreground">
-                İş yapış şeklimizi belirleyen temel ilkelerimiz
+                {t("about.valuesDescription")}
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -118,9 +110,9 @@ export default function About() {
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
                     <Award className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold">Kalite</h3>
+                  <h3 className="text-xl font-semibold">{t("about.value1Title")}</h3>
                   <p className="text-sm text-muted-foreground">
-                    Her üründe en yüksek kalite standartlarını uyguluyoruz
+                    {t("about.value1Description")}
                   </p>
                 </CardContent>
               </Card>
@@ -130,9 +122,9 @@ export default function About() {
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
                     <Users className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold">Müşteri Odaklılık</h3>
+                  <h3 className="text-xl font-semibold">{t("about.value2Title")}</h3>
                   <p className="text-sm text-muted-foreground">
-                    Müşteri memnuniyeti bizim için her şeyden önce gelir
+                    {t("about.value2Description")}
                   </p>
                 </CardContent>
               </Card>
@@ -142,9 +134,9 @@ export default function About() {
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
                     <Target className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold">Güvenilirlik</h3>
+                  <h3 className="text-xl font-semibold">{t("about.value3Title")}</h3>
                   <p className="text-sm text-muted-foreground">
-                    Sözümüzde durur, taahhütlerimizi eksiksiz yerine getiririz
+                    {t("about.value3Description")}
                   </p>
                 </CardContent>
               </Card>
@@ -154,9 +146,9 @@ export default function About() {
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
                     <Eye className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold">Yenilikçilik</h3>
+                  <h3 className="text-xl font-semibold">{t("about.value4Title")}</h3>
                   <p className="text-sm text-muted-foreground">
-                    Sürekli gelişim ve yenilikçi çözümler üretmeyi hedefliyoruz
+                    {t("about.value4Description")}
                   </p>
                 </CardContent>
               </Card>

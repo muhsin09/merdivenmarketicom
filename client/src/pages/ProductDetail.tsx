@@ -7,8 +7,11 @@ import { ArrowLeft, CheckCircle, Package, Zap, ChevronLeft, ChevronRight, X, Zoo
 import { Link, useParams } from "wouter";
 import { useState, useEffect } from "react";
 import type { Product } from "@/types/product";
+import { useTranslation } from "react-i18next";
+import i18n from "@/i18n";
 
 export default function ProductDetail() {
+  const { t } = useTranslation();
   const params = useParams();
   const [product, setProduct] = useState<Product | null>(null);
   const [loading, setLoading] = useState(true);
@@ -36,7 +39,10 @@ export default function ProductDetail() {
   };
 
   useEffect(() => {
-    fetch("/data/products.json")
+    const currentLanguage = i18n.language || "tr";
+    const productsFile = currentLanguage === "en" ? "/data/products-en.json" : "/data/products-tr.json";
+    
+    fetch(productsFile)
       .then((res) => res.json())
       .then((data: Product[]) => {
         const foundProduct = data.find((p) => p.slug === params.slug);
@@ -48,7 +54,7 @@ export default function ProductDetail() {
         console.error("Error loading product:", error);
         setLoading(false);
       });
-  }, [params.slug]);
+  }, [params.slug, i18n.language]);
 
   // ESC key to close modal
   useEffect(() => {
@@ -76,7 +82,7 @@ export default function ProductDetail() {
       <div className="min-h-screen flex flex-col">
         <Header />
         <main className="flex-1 flex items-center justify-center">
-          <p className="text-muted-foreground">Yükleniyor...</p>
+          <p className="text-muted-foreground">{t("common.loading")}</p>
         </main>
         <Footer />
       </div>
@@ -89,9 +95,9 @@ export default function ProductDetail() {
         <Header />
         <main className="flex-1 flex items-center justify-center">
           <div className="text-center space-y-4">
-            <h1 className="text-2xl font-bold">Ürün Bulunamadı</h1>
+            <h1 className="text-2xl font-bold">{t("common.notFound")}</h1>
             <Link href="/products">
-              <Button>Ürünlere Dön</Button>
+              <Button>{t("common.backToProducts")}</Button>
             </Link>
           </div>
         </main>
@@ -116,7 +122,7 @@ export default function ProductDetail() {
             <Link href="/products">
               <Button variant="ghost" size="sm" className="gap-2">
                 <ArrowLeft className="h-4 w-4" />
-                Ürünlere Dön
+                {t("common.backToProducts")}
               </Button>
             </Link>
           </div>
@@ -135,7 +141,7 @@ export default function ProductDetail() {
                       <>
                         <img
                           src={product.images[currentImageIndex]}
-                          alt={`${product.name} - Fotoğraf ${currentImageIndex + 1}`}
+                          alt={`${product.name} - ${t("common.photo")} ${currentImageIndex + 1}`}
                           className="w-full h-full object-contain transition-transform group-hover:scale-105"
                         />
                         
@@ -179,7 +185,7 @@ export default function ProductDetail() {
                       <div className="w-full h-full flex items-center justify-center text-muted-foreground">
                         <div className="text-center">
                           <Package className="h-16 w-16 mx-auto mb-4 opacity-50" />
-                          <p>Fotoğraf bulunamadı</p>
+                          <p>{t("common.noImage")}</p>
                         </div>
                       </div>
                     )}
@@ -200,7 +206,7 @@ export default function ProductDetail() {
                         >
                           <img
                             src={image}
-                            alt={`${product.name} - Küçük resim ${index + 1}`}
+                            alt={`${product.name} - ${t("common.thumbnail")} ${index + 1}`}
                             // className="w-full h-full object-cover"
                           />
                         </button>
@@ -227,7 +233,7 @@ export default function ProductDetail() {
 
                 {/* Features */}
                 <div>
-                  <h2 className="text-2xl font-semibold mb-4">Özellikler</h2>
+                  <h2 className="text-2xl font-semibold mb-4">{t("productDetail.features")}</h2>
                   <ul className="space-y-3">
                     {product.features.map((feature, index) => (
                       <li key={index} className="flex items-start gap-3">
@@ -240,55 +246,55 @@ export default function ProductDetail() {
 
                 {/* Specifications */}
                 <div>
-                  <h2 className="text-2xl font-semibold mb-4">Teknik Özellikler</h2>
+                  <h2 className="text-2xl font-semibold mb-4">{t("productDetail.specifications")}</h2>
                   <Card>
                     <CardContent className="pt-6">
                       <dl className="space-y-4">
                         <div className="flex justify-between py-3 border-b">
-                          <dt className="font-medium">Malzeme</dt>
+                          <dt className="font-medium">{t("productDetail.material")}</dt>
                           <dd className="text-muted-foreground">{product.specifications.material}</dd>
                         </div>
                         <div className="flex justify-between py-3 border-b">
-                          <dt className="font-medium">Kaplama</dt>
+                          <dt className="font-medium">{t("productDetail.finish")}</dt>
                           <dd className="text-muted-foreground">{product.specifications.finish}</dd>
                         </div>
                         <div className="flex justify-between py-3 border-b">
-                          <dt className="font-medium">Taşıma Kapasitesi</dt>
+                          <dt className="font-medium">{t("productDetail.loadCapacity")}</dt>
                           <dd className="text-muted-foreground">{product.specifications.loadCapacity}</dd>
                         </div>
                         {product.specifications.stepCount && (
                           <div className="flex justify-between py-3 border-b">
-                            <dt className="font-medium">Basamak Sayısı</dt>
+                            <dt className="font-medium">{t("productDetail.stepCount")}</dt>
                             <dd className="text-muted-foreground">{product.specifications.stepCount}</dd>
                           </div>
                         )}
                         {product.specifications.closedHeight && (
                           <div className="flex justify-between py-3 border-b">
-                            <dt className="font-medium">Kapalı Halde Boyut (Yükseklik)</dt>
+                            <dt className="font-medium">{t("productDetail.closedHeight")}</dt>
                             <dd className="text-muted-foreground">{product.specifications.closedHeight}</dd>
                           </div>
                         )}
                         {product.specifications.openHeight && (
                           <div className="flex justify-between py-3 border-b">
-                            <dt className="font-medium">Açık Halde Yükseklik (Kullanım Yüksekliği)</dt>
+                            <dt className="font-medium">{t("productDetail.openHeight")}</dt>
                             <dd className="text-muted-foreground">{product.specifications.openHeight}</dd>
                           </div>
                         )}
                         {product.specifications.baseWidth && (
                           <div className="flex justify-between py-3 border-b">
-                            <dt className="font-medium">Açık Halde Taban Genişliği</dt>
+                            <dt className="font-medium">{t("productDetail.baseWidth")}</dt>
                             <dd className="text-muted-foreground">{product.specifications.baseWidth}</dd>
                           </div>
                         )}
                         {product.specifications.electricInsulation && (
                           <div className="flex justify-between py-3 border-b">
-                            <dt className="font-medium">Elektrik İletkenliği</dt>
+                            <dt className="font-medium">{t("productDetail.electricInsulation")}</dt>
                             <dd className="text-muted-foreground">{product.specifications.electricInsulation}</dd>
                           </div>
                         )}
                         {product.specifications.warranty && (
                           <div className="flex justify-between py-3">
-                            <dt className="font-medium">Garanti</dt>
+                            <dt className="font-medium">{t("productDetail.warranty")}</dt>
                             <dd className="text-muted-foreground">{product.specifications.warranty}</dd>
                           </div>
                         )}
@@ -319,7 +325,7 @@ export default function ProductDetail() {
             {/* Main Image */}
             <img
               src={product.images[currentImageIndex]}
-              alt={`${product.name} - Büyük görünüm ${currentImageIndex + 1}`}
+              alt={`${product.name} - ${t("common.largeView")} ${currentImageIndex + 1}`}
               className="max-w-full max-h-full object-contain"
             />
             

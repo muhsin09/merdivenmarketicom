@@ -7,8 +7,10 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -19,11 +21,11 @@ export default function Contact() {
   const handleWhatsAppSend = () => {
     const phoneNumber = "905368104278"; // Country code + phone number without leading +
     const lines = [
-      "Merhaba, web sitesinden iletişime geçiyorum.",
-      formData.name ? `Ad Soyad: ${formData.name}` : undefined,
-      formData.email ? `E-posta: ${formData.email}` : undefined,
-      formData.subject ? `Konu: ${formData.subject}` : undefined,
-      formData.message ? `Mesaj: ${formData.message}` : undefined,
+      t("contact.whatsappMessage"),
+      formData.name ? `${t("contact.whatsappName")}: ${formData.name}` : undefined,
+      formData.email ? `${t("contact.whatsappEmail")}: ${formData.email}` : undefined,
+      formData.subject ? `${t("contact.whatsappSubject")}: ${formData.subject}` : undefined,
+      formData.message ? `${t("contact.whatsappMessageLabel")}: ${formData.message}` : undefined,
     ].filter(Boolean) as string[];
     const text = lines.join("\n");
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
@@ -48,10 +50,9 @@ export default function Contact() {
         <section className="py-12 sm:py-16 bg-gradient-to-br from-accent via-background to-background">
           <div className="container">
             <div className="max-w-3xl">
-              <h1 className="text-4xl lg:text-5xl font-bold mb-4">İletişim</h1>
+              <h1 className="text-4xl lg:text-5xl font-bold mb-4">{t("contact.pageTitle")}</h1>
               <p className="text-lg text-muted-foreground">
-                Sorularınız için bize ulaşın, size yardımcı olmaktan mutluluk
-                duyarız
+                {t("contact.pageDescription")}
               </p>
             </div>
           </div>
@@ -70,7 +71,7 @@ export default function Contact() {
                         <Phone className="h-5 w-5 text-primary" />
                       </div>
                       <div>
-                        <h3 className="font-semibold mb-1">Telefon</h3>
+                        <h3 className="font-semibold mb-1">{t("contact.phone")}</h3>
                         <a
                           href="tel:+905368104278"
                           className="text-sm text-muted-foreground hover:underline"
@@ -89,7 +90,7 @@ export default function Contact() {
                         <Mail className="h-5 w-5 text-primary" />
                       </div>
                       <div>
-                        <h3 className="font-semibold mb-1">E-posta</h3>
+                        <h3 className="font-semibold mb-1">{t("contact.email")}</h3>
                         <p className="text-sm text-muted-foreground">
                           itimatahsapmerdiven@gmail.com
                         </p>
@@ -105,11 +106,11 @@ export default function Contact() {
                         <MapPin className="h-5 w-5 text-primary" />
                       </div>
                       <div>
-                        <h3 className="font-semibold mb-1">Adres</h3>
+                        <h3 className="font-semibold mb-1">{t("contact.address")}</h3>
                         <p className="text-sm text-muted-foreground">
-                          Önder Mah. Ulubat Sk. No:69 Kat:2
+                          {t("contact.addressLine1")}
                           <br />
-                          Siteler 06360 Altındağ/Ankara
+                          {t("contact.addressLine2")}
                         </p>
                       </div>
                     </div>
@@ -123,13 +124,13 @@ export default function Contact() {
                         <Clock className="h-5 w-5 text-primary" />
                       </div>
                       <div>
-                        <h3 className="font-semibold mb-1">Çalışma Saatleri</h3>
+                        <h3 className="font-semibold mb-1">{t("contact.workingHours")}</h3>
                         <p className="text-sm text-muted-foreground">
-                          Pazartesi - Cuma: 09:00 - 18:00
+                          {t("contact.workingHoursWeekday")}
                           <br />
-                          Cumartesi: 09:00 - 14:00
+                          {t("contact.workingHoursSaturday")}
                           <br />
-                          Pazar: Kapalı
+                          {t("contact.workingHoursSunday")}
                         </p>
                       </div>
                     </div>
@@ -144,47 +145,47 @@ export default function Contact() {
                     <form className="space-y-6">
                       <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
                         <div className="space-y-2">
-                          <Label htmlFor="name">Ad Soyad</Label>
+                          <Label htmlFor="name">{t("contact.formName")}</Label>
                           <Input
                             id="name"
                             name="name"
                             value={formData.name}
                             onChange={handleChange}
-                            placeholder="Adınız ve soyadınız"
+                            placeholder={t("contact.formNamePlaceholder")}
                           />
                         </div>
                         <div className="space-y-2">
-                          <Label htmlFor="email">E-posta</Label>
+                          <Label htmlFor="email">{t("contact.formEmail")}</Label>
                           <Input
                             id="email"
                             name="email"
                             type="email"
                             value={formData.email}
                             onChange={handleChange}
-                            placeholder="ornek@email.com"
+                            placeholder={t("contact.formEmailPlaceholder")}
                           />
                         </div>
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="subject">Konu</Label>
+                        <Label htmlFor="subject">{t("contact.formSubject")}</Label>
                         <Input
                           id="subject"
                           name="subject"
                           value={formData.subject}
                           onChange={handleChange}
-                          placeholder="Mesajınızın konusu"
+                          placeholder={t("contact.formSubjectPlaceholder")}
                         />
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="message">Mesajınız</Label>
+                        <Label htmlFor="message">{t("contact.formMessage")}</Label>
                         <Textarea
                           id="message"
                           name="message"
                           value={formData.message}
                           onChange={handleChange}
-                          placeholder="Mesajınızı buraya yazın..."
+                          placeholder={t("contact.formMessagePlaceholder")}
                           rows={8}
                         />
                       </div>
@@ -197,7 +198,7 @@ export default function Contact() {
                         onClick={handleWhatsAppSend}
                       >
                         <MessageCircle className="h-5 w-5" />
-                        WhatsApp ile Gönder
+                        {t("contact.sendWhatsApp")}
                       </Button>
                     </form>
                   </CardContent>
@@ -212,10 +213,9 @@ export default function Contact() {
           <div className="container">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-8">
-                <h2 className="text-3xl font-bold mb-4">Konumumuz</h2>
+                <h2 className="text-3xl font-bold mb-4">{t("contact.locationTitle")}</h2>
                 <p className="text-muted-foreground">
-                  Önder Mah. Ulubat Sk. No:69 Kat:2, Siteler 06360
-                  Altındağ/Ankara
+                  {t("contact.locationDescription")}
                 </p>
               </div>
 
@@ -229,7 +229,7 @@ export default function Contact() {
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="BEREKET AHŞAP KAPI MUTFAK ORMAN ÜRÜNLERİ LTD. ŞTİ. Konumu"
+                    title={t("contact.mapTitle")}
                     className="w-full h-full"
                   />
                 </div>
@@ -247,11 +247,11 @@ export default function Contact() {
                     rel="noopener noreferrer"
                   >
                     <MapPin className="h-5 w-5" />
-                    Yol Tarifi Al
+                    {t("contact.getDirections")}
                   </a>
                 </Button>
                 <p className="text-sm text-muted-foreground mt-2">
-                  Konumumuza kolayca ulaşın
+                  {t("contact.getDirectionsDescription")}
                 </p>
               </div>
             </div>

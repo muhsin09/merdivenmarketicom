@@ -9,6 +9,7 @@ import Products from "./pages/Products";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ProductDetail from "./pages/ProductDetail";
+import "./i18n";
 
 function Router() {
   return (

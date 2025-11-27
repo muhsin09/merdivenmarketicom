@@ -16,14 +16,16 @@ import {
   Zap,
 } from "lucide-react";
 import { Link } from "wouter";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+  const { t } = useTranslation();
   return (
     <div className="min-h-screen flex flex-col">
       <SEO
-        title="İtimat Ahşap Merdiven - Çift Çıkışlı Ahşap Merdiven"
-        description="20+ yıllık tecrübe ile kaliteli çift çıkışlı ahşap merdiven üretimi. 3+3'ten 10+10'a kadar geniş model yelpazesi."
-        keywords="çift çıkışlı merdiven, ahşap merdiven, A tipi merdiven, 3+3 merdiven, merdiven fiyatları, fırınlanmış kayın"
+        title={t("home.title")}
+        description={t("home.description")}
+        keywords={t("home.keywords")}
       />
       <Header />
 
@@ -37,17 +39,12 @@ export default function Home() {
                 <div className="inline-block">
                   <span className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
                     <Zap className="h-4 w-4 mr-2" />
-                    Profesyonel Merdiven Çözümleri
+                    {t("home.badge")}
                   </span>
                 </div>
-                <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                  Kaliteli <span className="text-primary">Çift Çıkışlı</span>{" "}
-                  Ahşap Merdiven
-                </h1>
+                <h1 className="text-4xl lg:text-6xl font-bold leading-tight" dangerouslySetInnerHTML={{ __html: t("home.heroTitle") }} />
                 <p className="text-lg text-muted-foreground">
-                  20+ yıllık tecrübemiz ile üretilen, pratik ve güvenli çift
-                  çıkışlı ahşap merdivenler. 3+3'ten 10+10'a kadar geniş model
-                  yelpazesi ile her ihtiyaca uygun çözümler.
+                  {t("home.heroDescription")}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link href="/products">
@@ -55,7 +52,7 @@ export default function Home() {
                       size="lg"
                       className="bg-primary hover:bg-primary/90 text-lg px-8"
                     >
-                      Ürünleri İncele
+                      {t("common.viewProducts")}
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
                   </Link>
@@ -65,27 +62,26 @@ export default function Home() {
                       variant="outline"
                       className="text-lg px-8"
                     >
-                      Ücretsiz Teklif Al
+                      {t("common.getFreeQuote")}
                     </Button>
                   </Link>
                 </div>
                 <div className="flex items-center space-x-8 pt-4">
                   <div>
-                    <div className="text-3xl font-bold text-primary">20+</div>
                     <div className="text-sm text-muted-foreground">
-                      Yıllık Tecrübe
+                      {t("home.yearsExperience")}
                     </div>
                   </div>
                   <div>
                     <div className="text-3xl font-bold text-primary">8</div>
                     <div className="text-sm text-muted-foreground">
-                      Farklı Model
+                      {t("home.differentModels")}
                     </div>
                   </div>
                   <div>
                     <div className="text-3xl font-bold text-primary">%100</div>
                     <div className="text-sm text-muted-foreground">
-                      Ahşap Kalite
+                      {t("home.woodQuality")}
                     </div>
                   </div>
                 </div>
@@ -94,7 +90,7 @@ export default function Home() {
                 <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                   <img 
                     src="/images/products/TopluUrunlerDikey2.jpg"
-                    alt="Çift Çıkışlı Ahşap Merdivenler"
+                    alt={t("home.altImage")}
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -111,11 +107,10 @@ export default function Home() {
           <div className="container">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                Neden İtimat Ahşap Merdiven?
+                {t("home.whyTitle")}
               </h2>
               <p className="text-lg text-muted-foreground">
-                20+ yıllık tecrübemiz ve kalite anlayışımızla çift çıkışlı ahşap
-                merdiven üretiminde uzmanlaştık
+                {t("home.whyDescription")}
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -124,10 +119,9 @@ export default function Home() {
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
                     <CheckCircle className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold">Özel Tasarım</h3>
+                  <h3 className="text-xl font-semibold">{t("home.feature1Title")}</h3>
                   <p className="text-muted-foreground">
-                    Mekanınıza özel, ölçüye göre tasarlanmış merdiven çözümleri
-                    üretiyoruz.
+                    {t("home.feature1Description")}
                   </p>
                 </CardContent>
               </Card>
@@ -137,10 +131,9 @@ export default function Home() {
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
                     <Clock className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold">Hızlı Teslimat</h3>
+                  <h3 className="text-xl font-semibold">{t("home.feature2Title")}</h3>
                   <p className="text-muted-foreground">
-                    Projelerinizi zamanında teslim etme garantisi ile
-                    çalışıyoruz.
+                    {t("home.feature2Description")}
                   </p>
                 </CardContent>
               </Card>
@@ -150,22 +143,9 @@ export default function Home() {
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
                     <Users className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold">Uzman Ekip</h3>
+                  <h3 className="text-xl font-semibold">{t("home.feature3Title")}</h3>
                   <p className="text-muted-foreground">
-                    20+ yıllık tecrübeye sahip uzman ekibimizle hizmetinizdeyiz.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
-                <CardContent className="pt-6 space-y-4">
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <Zap className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold">Uygun Fiyat</h3>
-                  <p className="text-muted-foreground">
-                    Kaliteden ödün vermeden, rekabetçi fiyatlarla hizmet
-                    veriyoruz.
+                    {t("home.feature3Description")}
                   </p>
                 </CardContent>
               </Card>
@@ -175,10 +155,21 @@ export default function Home() {
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
                     <DollarSign className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold">Elektrik İletmez</h3>
+                  <h3 className="text-xl font-semibold">{t("home.feature4Title")}</h3>
                   <p className="text-muted-foreground">
-                    Ahşap malzemesi sayesinde elektrik iletmez, güvenli kullanım
-                    sağlar.
+                    {t("home.feature4Description")}
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
+                <CardContent className="pt-6 space-y-4">
+                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <Zap className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold">{t("home.feature5Title")}</h3>
+                  <p className="text-muted-foreground">
+                    {t("home.feature5Description")}
                   </p>
                 </CardContent>
               </Card>
@@ -191,11 +182,10 @@ export default function Home() {
           <div className="container">
             <div className="text-center max-w-3xl mx-auto mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                Özel İndirim Fırsatları
+                {t("home.discountsTitle")}
               </h2>
               <p className="text-lg text-muted-foreground">
-                Toptan veya parakende alımlarda özel indirimler için iletişime
-                geçiniz
+                {t("home.discountsDescription")}
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -204,14 +194,14 @@ export default function Home() {
                   <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
                     <ShoppingCart className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold">Toptan Alımlar</h3>
+                  <h3 className="text-xl font-semibold">{t("home.wholesaleTitle")}</h3>
                   <p className="text-muted-foreground">
-                    Toptan alımlarda özel fiyat avantajlarından yararlanın
+                    {t("home.wholesaleDescription")}
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 mt-4">
                     <Link href="/contact" className="flex-1">
                       <Button variant="outline" className="w-full">
-                        İletişime Geç
+                        {t("common.contactUs")}
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </Button>
                     </Link>
@@ -220,14 +210,13 @@ export default function Home() {
                       className="flex-1 border-[#25D366] text-[#25D366] hover:bg-[#25D366]/10"
                       onClick={() => {
                         const phoneNumber = "905368104278";
-                        const text =
-                          "Merhaba, toptan alım hakkında bilgi almak istiyorum.";
+                        const text = t("home.whatsappWholesale");
                         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
                         window.open(url, "_blank", "noopener,noreferrer");
                       }}
                     >
                       <MessageCircle className="h-4 w-4 mr-2" />
-                      WhatsApp
+                      {t("home.whatsapp")}
                     </Button>
                   </div>
                 </CardContent>
@@ -238,14 +227,14 @@ export default function Home() {
                   <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
                     <Package className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold">Parakende Alımlar</h3>
+                  <h3 className="text-xl font-semibold">{t("home.retailTitle")}</h3>
                   <p className="text-muted-foreground">
-                    Parakende alımlarda da özel indirim fırsatları mevcut
+                    {t("home.retailDescription")}
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 mt-4">
                     <Link href="/contact" className="flex-1">
                       <Button variant="outline" className="w-full">
-                        İletişime Geç
+                        {t("common.contactUs")}
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </Button>
                     </Link>
@@ -254,14 +243,13 @@ export default function Home() {
                       className="flex-1 border-[#25D366] text-[#25D366] hover:bg-[#25D366]/10"
                       onClick={() => {
                         const phoneNumber = "905368104278";
-                        const text =
-                          "Merhaba, parakende alım hakkında bilgi almak istiyorum.";
+                        const text = t("home.whatsappRetail");
                         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
                         window.open(url, "_blank", "noopener,noreferrer");
                       }}
                     >
                       <MessageCircle className="h-4 w-4 mr-2" />
-                      WhatsApp
+                      {t("home.whatsapp")}
                     </Button>
                   </div>
                 </CardContent>
@@ -273,8 +261,7 @@ export default function Home() {
                   <div className="flex items-center justify-center gap-3">
                     <Percent className="h-6 w-6 text-primary" />
                     <p className="text-lg font-semibold">
-                      Özel indirim oranları için detaylı bilgi almak
-                      istiyorsanız bizimle iletişime geçin
+                      {t("home.discountInfo")}
                     </p>
                   </div>
                 </CardContent>
@@ -290,18 +277,17 @@ export default function Home() {
               <div className="absolute inset-0 bg-grid-white/10" />
               <CardContent className="relative py-16 px-8 text-center text-secondary-foreground">
                 <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                  Hayalinizdeki Merdiveni Birlikte Tasarlayalım
+                  {t("home.ctaTitle")}
                 </h2>
                 <p className="text-lg mb-8 text-secondary-foreground/90 max-w-2xl mx-auto">
-                  Ücretsiz keşif ve danışmanlık hizmeti için hemen iletişime
-                  geçin
+                  {t("home.ctaDescription")}
                 </p>
                 <Link href="/contact">
                   <Button
                     size="lg"
                     className="bg-primary hover:bg-primary/90 text-lg px-8"
                   >
-                    Ücretsiz Teklif Al
+                    {t("common.getFreeQuote")}
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>

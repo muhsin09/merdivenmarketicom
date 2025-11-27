@@ -7,14 +7,20 @@ import { ArrowRight, Filter } from "lucide-react";
 import { Link } from "wouter";
 import { useState, useEffect } from "react";
 import type { Product } from "@/types/product";
+import { useTranslation } from "react-i18next";
+import i18n from "@/i18n";
 
 export default function Products() {
+  const { t } = useTranslation();
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
 
   useEffect(() => {
-    fetch("/data/products.json")
+    const currentLanguage = i18n.language || "tr";
+    const productsFile = currentLanguage === "en" ? "/data/products-en.json" : "/data/products-tr.json";
+    
+    fetch(productsFile)
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
@@ -24,7 +30,7 @@ export default function Products() {
         console.error("Error loading products:", error);
         setLoading(false);
       });
-  }, []);
+  }, [i18n.language]);
 
   const categories = ["all", ...Array.from(new Set(products.map((p) => p.category)))];
   
@@ -35,9 +41,9 @@ export default function Products() {
   return (
     <div className="min-h-screen flex flex-col">
       <SEO 
-        title="Ürünlerimiz - Merdiven Marketi"
-        description="Geniş çift çıkışlı ahşap merdiven ürün yelpazemizi keşfedin. 3+3'ten 10+10'a kadar tüm modeller."
-        keywords="çift çıkışlı merdiven, ahşap merdiven fiyatları, A tipi merdiven, 3+3 merdiven, 4+4 merdiven"
+        title={t("products.title")}
+        description={t("products.description")}
+        keywords={t("products.keywords")}
       />
       <Header />
       
@@ -47,10 +53,10 @@ export default function Products() {
           <div className="container">
             <div className="max-w-3xl">
               <h1 className="text-4xl lg:text-5xl font-bold mb-4">
-                Ürünlerimiz
+                {t("products.pageTitle")}
               </h1>
               <p className="text-lg text-muted-foreground">
-                Geniş ürün yelpazemizden ihtiyacınıza uygun merdiven çözümünü keşfedin
+                {t("products.pageDescription")}
               </p>
             </div>
           </div>
@@ -63,7 +69,7 @@ export default function Products() {
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <span className="font-medium text-foreground">{filteredProducts.length}</span>
-                <span>ürün bulundu</span>
+                <span>{t("common.productsFound")}</span>
               </div>
               <div className="flex flex-wrap gap-2">
                 {categories.map((category) => (
@@ -73,7 +79,7 @@ export default function Products() {
                     size="sm"
                     onClick={() => setSelectedCategory(category)}
                   >
-                    {category === "all" ? "Tümü" : category}
+                    {category === "all" ? t("common.all") : category}
                   </Button>
                 ))}
               </div>
@@ -82,7 +88,7 @@ export default function Products() {
             {/* Loading State */}
             {loading && (
               <div className="text-center py-12">
-                <p className="text-muted-foreground">Ürünler yükleniyor...</p>
+                <p className="text-muted-foreground">{t("common.loadingProducts")}</p>
               </div>
             )}
 
@@ -113,7 +119,7 @@ export default function Products() {
                       {product.featured && (
                         <div className="absolute top-4 left-4">
                           <span className="inline-block px-3 py-1 bg-secondary text-secondary-foreground text-xs font-medium rounded-full">
-                            Öne Çıkan
+                            {t("products.featured")}
                           </span>
                         </div>
                       )}
@@ -134,7 +140,7 @@ export default function Products() {
                     <CardFooter className="pt-0">
                       <Link href={`/products/${product.slug}`}>
                         <Button className="w-full group/btn">
-                          Detayları İncele
+                          {t("common.viewDetails")}
                           <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                         </Button>
                       </Link>
@@ -147,7 +153,7 @@ export default function Products() {
             {/* Empty State */}
             {!loading && filteredProducts.length === 0 && (
               <div className="text-center py-12">
-                <p className="text-muted-foreground">Bu kategoride ürün bulunamadı.</p>
+                <p className="text-muted-foreground">{t("common.noProducts")}</p>
               </div>
             )}
           </div>
@@ -158,14 +164,14 @@ export default function Products() {
           <div className="container">
             <div className="max-w-3xl mx-auto text-center space-y-6">
               <h2 className="text-3xl lg:text-4xl font-bold">
-                Aradığınız Ürünü Bulamadınız mı?
+                {t("products.ctaTitle")}
               </h2>
               <p className="text-lg text-muted-foreground">
-                Özel tasarım ve ölçüye özel üretim hizmetlerimiz ile hayalinizdeki merdiveni gerçeğe dönüştürelim
+                {t("products.ctaDescription")}
               </p>
               <Link href="/contact">
                 <Button size="lg" className="bg-primary hover:bg-primary/90">
-                  Özel Teklif İste
+                  {t("products.ctaButton")}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>

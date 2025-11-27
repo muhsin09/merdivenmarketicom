@@ -1,0 +1,297 @@
+[
+  {
+    "id": 1,
+    "name": "A Tipi Ahşap Merdiven 3+3 Basamaklı",
+    "slug": "3-3-cift-cikisli-merdiven",
+    "category": "Çift Çıkışlı",
+    "shortDescription": "Fırınlanmış Kayın Ağacı ile üretilmiş, çift taraflı kullanıma uygun 3+3 basamaklı merdiven",
+    "description": "Doğal ve kaliteli Fırınlanmış Kayın Ağacı ile üretilmiş bu merdiven, hem dayanıklı hem de estetik bir görünüme sahiptir. Ev ve iş yerlerinde güvenli ve konforlu kullanım sağlar. Gizli zıvana ve ahşap tutkalla sıkıştırılmış, dört ayrı noktadan uzun saplama cıvata ile güçlendirilmiş sağlam yapısı ile uzun ömürlü kullanım sunar.",
+    "features": [
+      "Dayanıklı Malzeme: Fırınlanmış Kayın Ağacı ile uzun ömürlü kullanım",
+      "Güvenli Kullanım: Çift çıkışlı tasarım sayesinde stabil ve güvenli",
+      "Kolay Erişim: 3+3 basamaklı yapı ile dar alanlarda bile rahat kullanım",
+      "Sağlam Yapı: Gizli zıvana ve ahşap tutkalla sıkıştırılmış",
+      "Ayrılmayı Önler: Basamaklar zincirle birbirine bağlanmıştır",
+      "Taşınabilir: Kolay açılıp kapanabilme özelliği",
+      "Çift Taraflı Kullanım: Çift taraflı çıkış imkanı",
+      "Elektrik İletmez: Güvenli kullanım"
+    ],
+    "specifications": {
+      "material": "Fırınlanmış Kayın Ağacı",
+      "finish": "Verniklenmiş",
+      "loadCapacity": "Profesyonel kullanıma uygun",
+      "warranty": "2 yıl",
+      "stepCount": "3+3 basamak",
+      "electricInsulation": "Evet",
+      "closedHeight": "98 cm",
+      "openHeight": "87 cm",
+      "baseWidth": "70 cm"
+    },
+    "price": "2.144 TL",
+    "featured": true,
+    "images": [
+      "/images/products/3+3/3+3_acik_onden_u.jpg",
+      "/images/products/3+3/3+3_acik_yandan_u.jpg",
+      "/images/products/3+3/3+3_acik_yandan_u2.jpg",
+      "/images/products/3+3/3+3_katlanmis_dikey_yandan_u.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "A Tipi Ahşap Merdiven 4+4 Basamaklı",
+    "slug": "4-4-cift-cikisli-merdiven",
+    "category": "Çift Çıkışlı",
+    "shortDescription": "Fırınlanmış Kayın Ağacı ile üretilmiş, çift taraflı kullanıma uygun 4+4 basamaklı merdiven",
+    "description": "Doğal ve kaliteli Fırınlanmış Kayın Ağacı ile üretilmiş bu merdiven, hem dayanıklı hem de estetik bir görünüme sahiptir. Ev ve iş yerlerinde güvenli ve konforlu kullanım sağlar. Orta boy yapısı ile çok amaçlı kullanım için idealdir.",
+    "features": [
+      "Dayanıklı Malzeme: Fırınlanmış Kayın Ağacı ile uzun ömürlü kullanım",
+      "Güvenli Kullanım: Çift çıkışlı tasarım sayesinde stabil ve güvenli",
+      "Orta Boy: 4+4 basamaklı yapı ile çok amaçlı kullanım",
+      "Sağlam Yapı: Gizli zıvana ve ahşap tutkalla sıkıştırılmış",
+      "Ayrılmayı Önler: Basamaklar zincirle birbirine bağlanmıştır",
+      "Taşınabilir: Kolay açılıp kapanabilme özelliği",
+      "Çift Taraflı Kullanım: Çift taraflı çıkış imkanı",
+      "Elektrik İletmez: Güvenli kullanım"
+    ],
+    "specifications": {
+      "material": "Fırınlanmış Kayın Ağacı",
+      "finish": "Verniklenmiş",
+      "loadCapacity": "Profesyonel kullanıma uygun",
+      "warranty": "2 yıl",
+      "stepCount": "4+4 basamak",
+      "electricInsulation": "Evet",
+      "closedHeight": "128 cm",
+      "openHeight": "117 cm",
+      "baseWidth": "91 cm"
+    },
+    "price": "2.578 TL",
+    "featured": true,
+    "images": [
+      "/images/products/4+4/4+4_acik_onden_u.jpg",
+      "/images/products/4+4/4+4_acik_yandan_u.jpg",
+      "/images/products/4+4/4+4_acik_yandan_u2.jpg",
+      "/images/products/4+4/4+4_katlanmis_dikey_yandan_u.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "A Tipi Ahşap Merdiven 5+5 Basamaklı",
+    "slug": "5-5-cift-cikisli-merdiven",
+    "category": "Çift Çıkışlı",
+    "shortDescription": "Fırınlanmış Kayın Ağacı ile üretilmiş, yüksek erişim için 5+5 basamaklı merdiven",
+    "description": "Doğal ve kaliteli Fırınlanmış Kayın Ağacı ile üretilmiş bu merdiven, hem dayanıklı hem de estetik bir görünüme sahiptir. Yüksek tavanlı mekanlar ve dış mekan kullanımı için idealdir. Profesyonel kullanıma uygundur.",
+    "features": [
+      "Dayanıklı Malzeme: Fırınlanmış Kayın Ağacı ile uzun ömürlü kullanım",
+      "Güvenli Kullanım: Çift çıkışlı tasarım sayesinde stabil ve güvenli",
+      "Yüksek Erişim: 5+5 basamaklı yapı ile yüksek tavanlara ulaşım",
+      "Sağlam Yapı: Dört ayrı noktadan uzun saplama cıvata ile güçlendirilmiş",
+      "Ayrılmayı Önler: Basamaklar zincirle birbirine bağlanmıştır",
+      "Taşınabilir: Kolay açılıp kapanabilme özelliği",
+      "Çift Taraflı Kullanım: Çift taraflı çıkış imkanı",
+      "Elektrik İletmez: Güvenli kullanım"
+    ],
+    "specifications": {
+      "material": "Fırınlanmış Kayın Ağacı",
+      "finish": "Verniklenmiş",
+      "loadCapacity": "Profesyonel kullanıma uygun",
+      "warranty": "2 yıl",
+      "stepCount": "5+5 basamak",
+      "electricInsulation": "Evet",
+      "closedHeight": "156 cm",
+      "openHeight": "145 cm",
+      "baseWidth": "113 cm"
+    },
+    "price": "3.164 TL",
+    "featured": true,
+    "images": [
+      "/images/products/5+5/5+5_acik_onden_u.jpg",
+      "/images/products/5+5/5+5_acik_yandan_u.jpg",
+      "/images/products/5+5/5+5_acik_yandan_u2.jpg",
+      "/images/products/5+5/5+5_katlanmis_dikey_yandan_u.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "A Tipi Ahşap Merdiven 6+6 Basamaklı",
+    "slug": "6-6-cift-cikisli-merdiven",
+    "category": "Çift Çıkışlı",
+    "shortDescription": "Fırınlanmış Kayın Ağacı ile üretilmiş, maksimum yükseklik için 6+6 basamaklı merdiven",
+    "description": "Doğal ve kaliteli Fırınlanmış Kayın Ağacı ile üretilmiş bu merdiven, hem dayanıklı hem de estetik bir görünüme sahiptir. En yüksek erişim gerektiren işler için tasarlanmıştır. Ekstra güçlendirilmiş yapısı ile profesyonel kullanımda maksimum güvenlik sağlar.",
+    "features": [
+      "Dayanıklı Malzeme: Fırınlanmış Kayın Ağacı ile uzun ömürlü kullanım",
+      "Güvenli Kullanım: Çift çıkışlı tasarım sayesinde stabil ve güvenli",
+      "Maksimum Yükseklik: 6+6 basamaklı yapı ile en yüksek noktalara erişim",
+      "Sağlam Yapı: Ekstra güçlendirilmiş konstrüksiyon",
+      "Ayrılmayı Önler: Basamaklar zincirle birbirine bağlanmıştır",
+      "Taşınabilir: Kolay açılıp kapanabilme özelliği",
+      "Çift Taraflı Kullanım: Çift taraflı çıkış imkanı",
+      "Elektrik İletmez: Güvenli kullanım"
+    ],
+    "specifications": {
+      "material": "Fırınlanmış Kayın Ağacı",
+      "finish": "Verniklenmiş",
+      "loadCapacity": "Profesyonel kullanıma uygun",
+      "warranty": "2 yıl",
+      "stepCount": "6+6 basamak",
+      "electricInsulation": "Evet",
+      "closedHeight": "184 cm",
+      "openHeight": "174 cm",
+      "baseWidth": "144 cm"
+    },
+    "price": "3.721 TL",
+    "featured": true,
+    "images": [
+      "/images/products/6+6/6+6_acik_onden_u.jpg",
+      "/images/products/6+6/6+6_acik_yandan_u.jpg",
+      "/images/products/6+6/6+6_acik_yandan_u2.jpg",
+      "/images/products/6+6/6+6_katlanmis_dikey_yandan_u.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "A Tipi Ahşap Merdiven 7+7 Basamaklı",
+    "slug": "7-7-cift-cikisli-merdiven",
+    "category": "Çift Çıkışlı",
+    "shortDescription": "Fırınlanmış Kayın Ağacı ile üretilmiş, profesyonel kullanım için 7+7 basamaklı merdiven",
+    "description": "Doğal ve kaliteli Fırınlanmış Kayın Ağacı ile üretilmiş bu merdiven, endüstriyel ve profesyonel kullanım için özel olarak tasarlanmıştır. Yüksek dayanıklılık ve güvenlik standartlarına uygun üretilmiştir. Dekoratif ve fonksiyonel kullanım için idealdir.",
+    "features": [
+      "Dayanıklı Malzeme: Fırınlanmış Kayın Ağacı ile uzun ömürlü kullanım",
+      "Güvenli Kullanım: Çift çıkışlı tasarım sayesinde stabil ve güvenli",
+      "Profesyonel Seri: 7+7 basamaklı endüstriyel kullanım",
+      "Sağlam Yapı: Gizli zıvana ve ahşap tutkalla sıkıştırılmış",
+      "Ayrılmayı Önler: Basamaklar zincirle birbirine bağlanmıştır",
+      "Taşınabilir: Kolay açılıp kapanabilme özelliği",
+      "Çift Taraflı Kullanım: Çift taraflı çıkış imkanı",
+      "Elektrik İletmez: Güvenli kullanım"
+    ],
+    "specifications": {
+      "material": "Fırınlanmış Kayın Ağacı",
+      "finish": "Verniklenmiş",
+      "loadCapacity": "Profesyonel kullanıma uygun",
+      "warranty": "2 yıl",
+      "stepCount": "7+7 basamak",
+      "electricInsulation": "Evet",
+      "closedHeight": "214 cm",
+      "openHeight": "204 cm",
+      "baseWidth": "157 cm"
+    },
+    "price": "4.352 TL",
+    "featured": false,
+    "images": [
+      "/images/products/7+7/7+7_acik_onden_u.jpg",
+      "/images/products/7+7/7+7_acik_yandan_u.jpg",
+      "/images/products/7+7/7+7_acik_yandan_u2.jpg",
+      "/images/products/7+7/7+7_katlanmis_dikey_yandan_u.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "A Tipi Ahşap Merdiven 8+8 Basamaklı",
+    "slug": "8-8-cift-cikisli-merdiven",
+    "category": "Çift Çıkışlı",
+    "shortDescription": "Fırınlanmış Kayın Ağacı ile üretilmiş, ekstra yüksek erişim için 8+8 basamaklı merdiven",
+    "description": "Doğal ve kaliteli Fırınlanmış Kayın Ağacı ile üretilmiş bu merdiven, en zorlu işler için tasarlanmış profesyonel bir üründür. Maksimum güvenlik ve dayanıklılık sunar. Ağır hizmet tipi kullanım için uygundur.",
+    "features": [
+      "Dayanıklı Malzeme: Fırınlanmış Kayın Ağacı ile uzun ömürlü kullanım",
+      "Güvenli Kullanım: Çift çıkışlı tasarım sayesinde stabil ve güvenli",
+      "Ekstra Yüksek: 8+8 basamaklı yapı ile maksimum erişim",
+      "Sağlam Yapı: Ağır hizmet tipi güçlendirilmiş yapı",
+      "Ayrılmayı Önler: Basamaklar zincirle birbirine bağlanmıştır",
+      "Taşınabilir: Kolay açılıp kapanabilme özelliği",
+      "Çift Taraflı Kullanım: Çift taraflı çıkış imkanı",
+      "Elektrik İletmez: Güvenli kullanım"
+    ],
+    "specifications": {
+      "material": "Fırınlanmış Kayın Ağacı",
+      "finish": "Verniklenmiş",
+      "loadCapacity": "Profesyonel kullanıma uygun",
+      "warranty": "2 yıl",
+      "stepCount": "8+8 basamak",
+      "electricInsulation": "Evet",
+      "closedHeight": "244 cm",
+      "openHeight": "233 cm",
+      "baseWidth": "180 cm"
+    },
+    "price": "5.421 TL",
+    "featured": false,
+    "images": [
+      "/images/products/8+8/8+8_acik_onden_u.jpg",
+      "/images/products/8+8/8+8_acik_yandan_u.jpg",
+      "/images/products/8+8/8+8_katlanmis_dikey_yandan_u.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "A Tipi Ahşap Merdiven 9+9 Basamaklı",
+    "slug": "9-9-cift-cikisli-merdiven",
+    "category": "Çift Çıkışlı",
+    "shortDescription": "Fırınlanmış Kayın Ağacı ile üretilmiş, en yüksek model 9+9 basamaklı merdiven",
+    "description": "Doğal ve kaliteli Fırınlanmış Kayın Ağacı ile üretilmiş serimizin en yüksek modelidir. Endüstriyel tesisler ve özel projeler için ideal bir çözümdür. Yüksek güvenlik standartlarına uygun üretilmiştir.",
+    "features": [
+      "Dayanıklı Malzeme: Fırınlanmış Kayın Ağacı ile uzun ömürlü kullanım",
+      "Güvenli Kullanım: Çift çıkışlı tasarım sayesinde stabil ve güvenli",
+      "Maksimum Model: 9+9 basamaklı en yüksek seri",
+      "Sağlam Yapı: Endüstriyel kullanım için özel güçlendirilmiş",
+      "Ayrılmayı Önler: Basamaklar zincirle birbirine bağlanmıştır",
+      "Taşınabilir: Kolay açılıp kapanabilme özelliği",
+      "Çift Taraflı Kullanım: Çift taraflı çıkış imkanı",
+      "Elektrik İletmez: Güvenli kullanım"
+    ],
+    "specifications": {
+      "material": "Fırınlanmış Kayın Ağacı",
+      "finish": "Verniklenmiş",
+      "loadCapacity": "Profesyonel kullanıma uygun",
+      "warranty": "2 yıl",
+      "stepCount": "9+9 basamak",
+      "electricInsulation": "Evet",
+      "closedHeight": "273 cm",
+      "openHeight": "262 cm",
+      "baseWidth": "196 cm"
+    },
+    "price": "6.306 TL",
+    "featured": false,
+    "images": [
+      "/images/products/9+9/9+9_acik_yandan_u.jpg",
+      "/images/products/9+9/9+9_katlanmis_dikey_yandan_u.jpg",
+      "/images/products/9+9AcikYandan.jpg",
+      "/images/products/9+9KapaliYandan.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "A Tipi Ahşap Merdiven 10+10 Basamaklı",
+    "slug": "10-10-cift-cikisli-merdiven",
+    "category": "Çift Çıkışlı",
+    "shortDescription": "Fırınlanmış Kayın Ağacı ile üretilmiş, maksimum yükseklik 10+10 basamaklı merdiven",
+    "description": "Doğal ve kaliteli Fırınlanmış Kayın Ağacı ile üretilmiş serimizin en büyük modelidir. Endüstriyel tesisler, yüksek tavanlı mekanlar ve özel projeler için maksimum erişim sağlar. En yüksek güvenlik standartlarına uygun üretilmiştir.",
+    "features": [
+      "Dayanıklı Malzeme: Fırınlanmış Kayın Ağacı ile uzun ömürlü kullanım",
+      "Güvenli Kullanım: Çift çıkışlı tasarım sayesinde stabil ve güvenli",
+      "Maksimum Yükseklik: 10+10 basamaklı en büyük model",
+      "Sağlam Yapı: Endüstriyel kullanım için ekstra güçlendirilmiş",
+      "Ayrılmayı Önler: Basamaklar zincirle birbirine bağlanmıştır",
+      "Taşınabilir: Kolay açılıp kapanabilme özelliği",
+      "Çift Taraflı Kullanım: Çift taraflı çıkış imkanı",
+      "Elektrik İletmez: Güvenli kullanım"
+    ],
+    "specifications": {
+      "material": "Fırınlanmış Kayın Ağacı",
+      "finish": "Verniklenmiş",
+      "loadCapacity": "Profesyonel kullanıma uygun",
+      "warranty": "2 yıl",
+      "stepCount": "10+10 basamak",
+      "electricInsulation": "Evet",
+      "closedHeight": "300 cm",
+      "openHeight": "290 cm",
+      "baseWidth": "237 cm"
+    },
+    "price": "7.239 TL",
+    "featured": false,
+    "images": [
+      "/images/products/9+9AcikYandan.jpg",
+      "/images/products/9+9KapaliYandan.jpg",
+      "/images/products/topluxyz.jpg"
+    ]
+  }
+]
+
