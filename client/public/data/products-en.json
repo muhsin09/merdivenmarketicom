@@ -15,7 +15,7 @@
       "loadCapacity": "Suitable for professional use",
       "warranty": "2 years",
       "stepCount": "3+3 steps",
-      "electricInsulation": "Yes",
+      "electricInsulation": "No",
       "closedHeight": "104,5 cm",
       "openHeight": "87 cm",
       "baseWidth": "70 cm"
@@ -45,7 +45,7 @@
       "loadCapacity": "Suitable for professional use",
       "warranty": "2 years",
       "stepCount": "4+4 steps",
-      "electricInsulation": "Yes",
+      "electricInsulation": "No",
       "closedHeight": "135,5 cm",
       "openHeight": "117 cm",
       "baseWidth": "91 cm"
@@ -75,7 +75,7 @@
       "loadCapacity": "Suitable for professional use",
       "warranty": "2 years",
       "stepCount": "5+5 steps",
-      "electricInsulation": "Yes",
+      "electricInsulation": "No",
       "closedHeight": "166,5 cm",
       "openHeight": "145 cm",
       "baseWidth": "113 cm"
@@ -105,7 +105,7 @@
       "loadCapacity": "Suitable for professional use",
       "warranty": "2 years",
       "stepCount": "6+6 steps",
-      "electricInsulation": "Yes",
+      "electricInsulation": "No",
       "closedHeight": "197,5 cm",
       "openHeight": "174 cm",
       "baseWidth": "144 cm"
@@ -135,7 +135,7 @@
       "loadCapacity": "Suitable for professional use",
       "warranty": "2 years",
       "stepCount": "7+7 steps",
-      "electricInsulation": "Yes",
+      "electricInsulation": "No",
       "closedHeight": "228,5 cm",
       "openHeight": "204 cm",
       "baseWidth": "157 cm"
@@ -165,7 +165,7 @@
       "loadCapacity": "Suitable for professional use",
       "warranty": "2 years",
       "stepCount": "8+8 steps",
-      "electricInsulation": "Yes",
+      "electricInsulation": "No",
       "closedHeight": "259,5 cm",
       "openHeight": "233 cm",
       "baseWidth": "180 cm"
@@ -194,7 +194,7 @@
       "loadCapacity": "Suitable for professional use",
       "warranty": "2 years",
       "stepCount": "9+9 steps",
-      "electricInsulation": "Yes",
+      "electricInsulation": "No",
       "closedHeight": "290,5 cm",
       "openHeight": "262 cm",
       "baseWidth": "196 cm"
@@ -224,7 +224,7 @@
       "loadCapacity": "Suitable for professional use",
       "warranty": "2 years",
       "stepCount": "10+10 steps",
-      "electricInsulation": "Yes",
+      "electricInsulation": "No",
       "closedHeight": "321,5 cm",
       "openHeight": "290 cm",
       "baseWidth": "237 cm"

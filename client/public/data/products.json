@@ -15,7 +15,7 @@
       "loadCapacity": "Profesyonel kullanıma uygun",
       "warranty": "2 yıl",
       "stepCount": "3+3 basamak",
-      "electricInsulation": "Evet",
+      "electricInsulation": "Hayır",
       "closedHeight": "104,5 cm",
       "openHeight": "87 cm",
       "baseWidth": "70 cm"
@@ -45,7 +45,7 @@
       "loadCapacity": "Profesyonel kullanıma uygun",
       "warranty": "2 yıl",
       "stepCount": "4+4 basamak",
-      "electricInsulation": "Evet",
+      "electricInsulation": "Hayır",
       "closedHeight": "135,5 cm",
       "openHeight": "117 cm",
       "baseWidth": "91 cm"
@@ -75,7 +75,7 @@
       "loadCapacity": "Profesyonel kullanıma uygun",
       "warranty": "2 yıl",
       "stepCount": "5+5 basamak",
-      "electricInsulation": "Evet",
+      "electricInsulation": "Hayır",
       "closedHeight": "166,5 cm",
       "openHeight": "145 cm",
       "baseWidth": "113 cm"
@@ -105,7 +105,7 @@
       "loadCapacity": "Profesyonel kullanıma uygun",
       "warranty": "2 yıl",
       "stepCount": "6+6 basamak",
-      "electricInsulation": "Evet",
+      "electricInsulation": "Hayır",
       "closedHeight": "197,5 cm",
       "openHeight": "174 cm",
       "baseWidth": "144 cm"
@@ -135,7 +135,7 @@
       "loadCapacity": "Profesyonel kullanıma uygun",
       "warranty": "2 yıl",
       "stepCount": "7+7 basamak",
-      "electricInsulation": "Evet",
+      "electricInsulation": "Hayır",
       "closedHeight": "228,5 cm",
       "openHeight": "204 cm",
       "baseWidth": "157 cm"
@@ -165,7 +165,7 @@
       "loadCapacity": "Profesyonel kullanıma uygun",
       "warranty": "2 yıl",
       "stepCount": "8+8 basamak",
-      "electricInsulation": "Evet",
+      "electricInsulation": "Hayır",
       "closedHeight": "259,5 cm",
       "openHeight": "233 cm",
       "baseWidth": "180 cm"
@@ -194,7 +194,7 @@
       "loadCapacity": "Profesyonel kullanıma uygun",
       "warranty": "2 yıl",
       "stepCount": "9+9 basamak",
-      "electricInsulation": "Evet",
+      "electricInsulation": "Hayır",
       "closedHeight": "290,5 cm",
       "openHeight": "262 cm",
       "baseWidth": "196 cm"
@@ -224,7 +224,7 @@
       "loadCapacity": "Profesyonel kullanıma uygun",
       "warranty": "2 yıl",
       "stepCount": "10+10 basamak",
-      "electricInsulation": "Evet",
+      "electricInsulation": "Hayır",
       "closedHeight": "321,5 cm",
       "openHeight": "290 cm",
       "baseWidth": "237 cm"
