@@ -9,6 +9,7 @@ import { useState, useEffect } from "react";
 import type { Product } from "@/types/product";
 import { useTranslation } from "react-i18next";
 import i18n from "@/i18n";
+import { mergeProductFeatures } from "@/lib/productUtils";
 
 export default function ProductDetail() {
   const { t } = useTranslation();
@@ -44,9 +45,14 @@ export default function ProductDetail() {
     
     fetch(productsFile)
       .then((res) => res.json())
-      .then((data: Product[]) => {
+      .then(async (data: Product[]) => {
         const foundProduct = data.find((p) => p.slug === params.slug);
-        setProduct(foundProduct || null);
+        if (foundProduct) {
+          const mergedProduct = await mergeProductFeatures(foundProduct);
+          setProduct(mergedProduct);
+        } else {
+          setProduct(null);
+        }
         setCurrentImageIndex(0); // Reset image index when product changes
         setLoading(false);
       })

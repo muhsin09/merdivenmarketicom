@@ -9,6 +9,7 @@ import { useState, useEffect } from "react";
 import type { Product } from "@/types/product";
 import { useTranslation } from "react-i18next";
 import i18n from "@/i18n";
+import { mergeProductsFeatures } from "@/lib/productUtils";
 
 export default function Products() {
   const { t } = useTranslation();
@@ -22,8 +23,9 @@ export default function Products() {
     
     fetch(productsFile)
       .then((res) => res.json())
-      .then((data) => {
-        setProducts(data);
+      .then(async (data: Product[]) => {
+        const mergedProducts = await mergeProductsFeatures(data);
+        setProducts(mergedProducts);
         setLoading(false);
       })
       .catch((error) => {
