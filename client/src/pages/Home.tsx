@@ -66,22 +66,36 @@ export default function Home() {
                     </Button>
                   </Link>
                 </div>
-                <div className="flex items-center space-x-8 pt-4">
-                  <div>
-                    <div className="text-sm text-muted-foreground">
-                      {t("home.yearsExperience")}
+                {/* Stats Cards */}
+                <div className="grid grid-cols-3 gap-3 md:gap-4 pt-8">
+                  <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 p-4 md:p-6 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                    <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <div className="relative text-center text-white">
+                      <Clock className="h-6 w-6 md:h-8 md:w-8 mx-auto mb-2 opacity-90" />
+                      <div className="text-2xl md:text-4xl font-black mb-1">20+</div>
+                      <div className="text-xs md:text-sm font-medium opacity-90">
+                        {t("home.yearsExperience")}
+                      </div>
                     </div>
                   </div>
-                  <div>
-                    <div className="text-3xl font-bold text-primary">8</div>
-                    <div className="text-sm text-muted-foreground">
-                      {t("home.differentModels")}
+                  <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 p-4 md:p-6 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                    <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <div className="relative text-center text-white">
+                      <Package className="h-6 w-6 md:h-8 md:w-8 mx-auto mb-2 opacity-90" />
+                      <div className="text-2xl md:text-4xl font-black mb-1">8</div>
+                      <div className="text-xs md:text-sm font-medium opacity-90">
+                        {t("home.differentModels")}
+                      </div>
                     </div>
                   </div>
-                  <div>
-                    <div className="text-3xl font-bold text-primary">%100</div>
-                    <div className="text-sm text-muted-foreground">
-                      {t("home.woodQuality")}
+                  <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-rose-500 to-pink-600 p-4 md:p-6 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                    <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <div className="relative text-center text-white">
+                      <CheckCircle className="h-6 w-6 md:h-8 md:w-8 mx-auto mb-2 opacity-90" />
+                      <div className="text-2xl md:text-4xl font-black mb-1">%100</div>
+                      <div className="text-xs md:text-sm font-medium opacity-90">
+                        {t("home.woodQuality")}
+                      </div>
                     </div>
                   </div>
                 </div>
