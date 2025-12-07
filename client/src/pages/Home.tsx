@@ -56,15 +56,6 @@ export default function Home() {
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
                   </Link>
-                  <Link href="/contact">
-                    <Button
-                      size="lg"
-                      variant="outline"
-                      className="text-lg px-8"
-                    >
-                      {t("common.getFreeQuote")}
-                    </Button>
-                  </Link>
                 </div>
                 {/* Stats Cards */}
                 <div className="grid grid-cols-3 gap-3 md:gap-4 pt-8">
@@ -296,15 +287,6 @@ export default function Home() {
                 <p className="text-lg mb-8 text-secondary-foreground/90 max-w-2xl mx-auto">
                   {t("home.ctaDescription")}
                 </p>
-                <Link href="/contact">
-                  <Button
-                    size="lg"
-                    className="bg-primary hover:bg-primary/90 text-lg px-8"
-                  >
-                    {t("common.getFreeQuote")}
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
-                </Link>
               </CardContent>
             </Card>
           </div>
