@@ -18,11 +18,15 @@
     "noImage": "Photo not found",
     "photo": "Photo",
     "thumbnail": "Thumbnail",
-    "largeView": "Large view"
+    "largeView": "Large view",
+    "viewAllProducts": "View All Products"
   },
   "home": {
     "title": "İtimat Wooden Ladder - Double Exit Wooden Ladder",
     "description": "Quality double exit wooden ladder production with 20+ years of experience. Wide model range from 3+3 to 10+10.",
+    "featuredTitle": "Our Most Popular Ladders",
+    "featuredDescription": "Discover our high-quality and durable wooden ladders that are most preferred by our customers.",
+    "featuredBadge": "Featured Products",
     "keywords": "double exit ladder, wooden ladder, type A ladder, 3+3 ladder, ladder prices, kiln-dried beech",
     "badge": "Professional Ladder Solutions",
     "heroTitle": "Quality <span class=\"text-primary\">Double Exit</span> Wooden Ladder",

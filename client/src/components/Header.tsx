@@ -37,28 +37,61 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/">
-              <a className="text-sm font-medium text-foreground hover:text-primary transition-colors">
-                {t("common.home")}
-              </a>
-            </Link>
-            <Link href="/products">
-              <a className="text-sm font-medium text-foreground hover:text-primary transition-colors">
-                {t("common.products")}
-              </a>
-            </Link>
-            <Link href="/about">
-              <a className="text-sm font-medium text-foreground hover:text-primary transition-colors">
-                {t("common.about")}
-              </a>
-            </Link>
-            <Link href="/contact">
-              <a className="text-sm font-medium text-foreground hover:text-primary transition-colors">
-                {t("common.contact")}
-              </a>
-            </Link>
-          </nav>
+          <div className="hidden md:flex items-center space-x-6">
+            <nav className="flex items-center space-x-6">
+              <Link href="/">
+                <a className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+                  {t("common.home")}
+                </a>
+              </Link>
+              <Link href="/products">
+                <a className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+                  {t("common.products")}
+                </a>
+              </Link>
+              <Link href="/about">
+                <a className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+                  {t("common.about")}
+                </a>
+              </Link>
+              <Link href="/contact">
+                <a className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+                  {t("common.contact")}
+                </a>
+              </Link>
+            </nav>
+
+            {/* Language Switcher */}
+            <div className="flex items-center space-x-1 border rounded-lg p-1 bg-muted/30">
+              <button
+                onClick={() => changeLanguage("tr")}
+                className={`px-3 py-1.5 text-sm font-medium rounded transition-colors ${i18nInstance.language === "tr"
+                    ? "bg-primary text-primary-foreground"
+                    : "text-muted-foreground hover:text-foreground"
+                  }`}
+              >
+                TR
+              </button>
+              <button
+                onClick={() => changeLanguage("en")}
+                className={`px-3 py-1.5 text-sm font-medium rounded transition-colors ${i18nInstance.language === "en"
+                    ? "bg-primary text-primary-foreground"
+                    : "text-muted-foreground hover:text-foreground"
+                  }`}
+              >
+                EN
+              </button>
+            </div>
+
+            {/* Phone Number */}
+            <a
+              href="tel:+905368104278"
+              className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Phone className="h-4 w-4" />
+              <span className="font-medium">+90 536 810 42 78</span>
+            </a>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -97,21 +130,19 @@ export default function Header() {
               <div className="flex items-center space-x-1 border rounded-lg p-1">
                 <button
                   onClick={() => changeLanguage("tr")}
-                  className={`flex-1 px-3 py-1 text-sm font-medium rounded transition-colors ${
-                    i18nInstance.language === "tr"
+                  className={`flex-1 px-3 py-1 text-sm font-medium rounded transition-colors ${i18nInstance.language === "tr"
                       ? "bg-primary text-primary-foreground"
                       : "text-muted-foreground hover:text-foreground"
-                  }`}
+                    }`}
                 >
                   TR
                 </button>
                 <button
                   onClick={() => changeLanguage("en")}
-                  className={`flex-1 px-3 py-1 text-sm font-medium rounded transition-colors ${
-                    i18nInstance.language === "en"
+                  className={`flex-1 px-3 py-1 text-sm font-medium rounded transition-colors ${i18nInstance.language === "en"
                       ? "bg-primary text-primary-foreground"
                       : "text-muted-foreground hover:text-foreground"
-                  }`}
+                    }`}
                 >
                   EN
                 </button>

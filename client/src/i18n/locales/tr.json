@@ -18,11 +18,15 @@
     "noImage": "Fotoğraf bulunamadı",
     "photo": "Fotoğraf",
     "thumbnail": "Küçük resim",
-    "largeView": "Büyük görünüm"
+    "largeView": "Büyük görünüm",
+    "viewAllProducts": "Tüm Ürünleri Gör"
   },
   "home": {
     "title": "İtimat Ahşap Merdiven - Çift Çıkışlı Ahşap Merdiven",
     "description": "20+ yıllık tecrübe ile kaliteli çift çıkışlı ahşap merdiven üretimi. 3+3'ten 10+10'a kadar geniş model yelpazesi.",
+    "featuredTitle": "En Popüler Merdivenlerimiz",
+    "featuredDescription": "Müşterilerimizin en çok tercih ettiği, kaliteli ve dayanıklı ahşap merdivenlerimizi keşfedin.",
+    "featuredBadge": "Öne Çıkan Ürünler",
     "keywords": "çift çıkışlı merdiven, ahşap merdiven, A tipi merdiven, 3+3 merdiven, merdiven fiyatları, fırınlanmış kayın",
     "badge": "Profesyonel Merdiven Çözümleri",
     "heroTitle": "Kaliteli <span class=\"text-primary\">Çift Çıkışlı</span> Ahşap Merdiven",
