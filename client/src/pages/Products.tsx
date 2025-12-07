@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import { ArrowRight, Filter } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 import { useState, useEffect } from "react";
 import type { Product } from "@/types/product";
@@ -158,26 +158,6 @@ export default function Products() {
                 <p className="text-muted-foreground">{t("common.noProducts")}</p>
               </div>
             )}
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="py-16 bg-muted/30">
-          <div className="container">
-            <div className="max-w-3xl mx-auto text-center space-y-6">
-              <h2 className="text-3xl lg:text-4xl font-bold">
-                {t("products.ctaTitle")}
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                {t("products.ctaDescription")}
-              </p>
-              <Link href="/contact">
-                <Button size="lg" className="bg-primary hover:bg-primary/90">
-                  {t("products.ctaButton")}
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-            </div>
           </div>
         </section>
       </main>

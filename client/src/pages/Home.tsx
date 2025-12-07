@@ -10,7 +10,6 @@ import {
   DollarSign,
   MessageCircle,
   Package,
-  Percent,
   ShoppingCart,
   Users,
   Zap,
@@ -118,19 +117,7 @@ export default function Home() {
                 {t("home.whyDescription")}
               </p>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
-                <CardContent className="pt-6 space-y-4">
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <CheckCircle className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold">{t("home.feature1Title")}</h3>
-                  <p className="text-muted-foreground">
-                    {t("home.feature1Description")}
-                  </p>
-                </CardContent>
-              </Card>
-
+            <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
               <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
                 <CardContent className="pt-6 space-y-4">
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
@@ -260,35 +247,6 @@ export default function Home() {
                 </CardContent>
               </Card>
             </div>
-            <div className="mt-8 text-center">
-              <Card className="border-2 border-primary/20 bg-primary/5 inline-block">
-                <CardContent className="pt-6 px-8">
-                  <div className="flex items-center justify-center gap-3">
-                    <Percent className="h-6 w-6 text-primary" />
-                    <p className="text-lg font-semibold">
-                      {t("home.discountInfo")}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="py-20">
-          <div className="container">
-            <Card className="bg-gradient-to-r from-secondary to-secondary/90 border-0 overflow-hidden relative">
-              <div className="absolute inset-0 bg-grid-white/10" />
-              <CardContent className="relative py-16 px-8 text-center text-secondary-foreground">
-                <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                  {t("home.ctaTitle")}
-                </h2>
-                <p className="text-lg mb-8 text-secondary-foreground/90 max-w-2xl mx-auto">
-                  {t("home.ctaDescription")}
-                </p>
-              </CardContent>
-            </Card>
           </div>
         </section>
       </main>

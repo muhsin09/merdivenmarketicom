@@ -3,7 +3,6 @@ import { Menu, Phone } from "lucide-react";
 import { Link } from "wouter";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import i18n from "@/i18n";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -12,8 +11,6 @@ export default function Header() {
   const changeLanguage = (lng: string) => {
     i18nInstance.changeLanguage(lng);
     localStorage.setItem("language", lng);
-    // Sayfa yenilemeden dil değişikliği otomatik olarak uygulanır
-    // Ürün verileri useEffect ile otomatik olarak yeniden yüklenir
   };
 
   return (
@@ -62,44 +59,6 @@ export default function Header() {
               </a>
             </Link>
           </nav>
-
-          {/* Contact Info & CTA */}
-          <div className="hidden lg:flex items-center space-x-4">
-            {/* Language Switcher */}
-            <div className="flex items-center space-x-1 border rounded-lg p-1">
-              <button
-                onClick={() => changeLanguage("tr")}
-                className={`px-3 py-1 text-sm font-medium rounded transition-colors ${
-                  i18nInstance.language === "tr"
-                    ? "bg-primary text-primary-foreground"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                TR
-              </button>
-              <button
-                onClick={() => changeLanguage("en")}
-                className={`px-3 py-1 text-sm font-medium rounded transition-colors ${
-                  i18nInstance.language === "en"
-                    ? "bg-primary text-primary-foreground"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                EN
-              </button>
-            </div>
-            <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-              <Phone className="h-4 w-4" />
-              <a href="tel:+905368104278" className="hover:underline">
-                +90 536 810 42 78
-              </a>
-            </div>
-            <Link href="/contact">
-              <Button className="bg-primary hover:bg-primary/90">
-                {t("common.getQuote")}
-              </Button>
-            </Link>
-          </div>
 
           {/* Mobile Menu Button */}
           <button

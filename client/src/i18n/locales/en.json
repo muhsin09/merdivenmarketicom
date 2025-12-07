@@ -34,7 +34,6 @@
     "whyTitle": "Why İtimat Wooden Ladder?",
     "whyDescription": "We have specialized in double exit wooden ladder production with our 20+ years of experience and quality approach",
     "feature1Title": "Custom Design",
-    "feature1Description": "We produce ladder solutions designed specifically for your space, custom-sized.",
     "feature2Title": "Fast Delivery",
     "feature2Description": "We work with a guarantee of timely delivery of your projects.",
     "feature3Title": "Expert Team",
@@ -49,12 +48,9 @@
     "wholesaleDescription": "Take advantage of special price advantages on wholesale purchases",
     "retailTitle": "Retail Purchases",
     "retailDescription": "Special discount opportunities are also available for retail purchases",
-    "discountInfo": "Contact us if you want to get detailed information about special discount rates",
     "whatsapp": "WhatsApp",
     "whatsappWholesale": "Hello, I would like to get information about wholesale purchase.",
-    "whatsappRetail": "Hello, I would like to get information about retail purchase.",
-    "ctaTitle": "Let's Design Your Dream Ladder Together",
-    "ctaDescription": "Contact us immediately for free consultation and advisory services"
+    "whatsappRetail": "Hello, I would like to get information about retail purchase."
   },
   "products": {
     "title": "Our Products - Ladder Market",
@@ -62,10 +58,7 @@
     "keywords": "double exit ladder, wooden ladder prices, type A ladder, 3+3 ladder, 4+4 ladder",
     "pageTitle": "Our Products",
     "pageDescription": "Discover the ladder solution that suits your needs from our wide product range",
-    "featured": "Featured",
-    "ctaTitle": "Couldn't Find the Product You're Looking For?",
-    "ctaDescription": "Let's turn your dream ladder into reality with our custom design and custom-sized production services",
-    "ctaButton": "Request Custom Quote"
+    "featured": "Featured"
   },
   "productDetail": {
     "features": "Features",

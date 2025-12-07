@@ -34,7 +34,6 @@
     "whyTitle": "Neden İtimat Ahşap Merdiven?",
     "whyDescription": "20+ yıllık tecrübemiz ve kalite anlayışımızla çift çıkışlı ahşap merdiven üretiminde uzmanlaştık",
     "feature1Title": "Özel Tasarım",
-    "feature1Description": "Mekanınıza özel, ölçüye göre tasarlanmış merdiven çözümleri üretiyoruz.",
     "feature2Title": "Hızlı Teslimat",
     "feature2Description": "Projelerinizi zamanında teslim etme garantisi ile çalışıyoruz.",
     "feature3Title": "Uzman Ekip",
@@ -49,12 +48,9 @@
     "wholesaleDescription": "Toptan alımlarda özel fiyat avantajlarından yararlanın",
     "retailTitle": "Parakende Alımlar",
     "retailDescription": "Parakende alımlarda da özel indirim fırsatları mevcut",
-    "discountInfo": "Özel indirim oranları için detaylı bilgi almak istiyorsanız bizimle iletişime geçin",
     "whatsapp": "WhatsApp",
     "whatsappWholesale": "Merhaba, toptan alım hakkında bilgi almak istiyorum.",
-    "whatsappRetail": "Merhaba, parakende alım hakkında bilgi almak istiyorum.",
-    "ctaTitle": "Hayalinizdeki Merdiveni Birlikte Tasarlayalım",
-    "ctaDescription": "Ücretsiz keşif ve danışmanlık hizmeti için hemen iletişime geçin"
+    "whatsappRetail": "Merhaba, parakende alım hakkında bilgi almak istiyorum."
   },
   "products": {
     "title": "Ürünlerimiz - Merdiven Marketi",
@@ -62,10 +58,7 @@
     "keywords": "çift çıkışlı merdiven, ahşap merdiven fiyatları, A tipi merdiven, 3+3 merdiven, 4+4 merdiven",
     "pageTitle": "Ürünlerimiz",
     "pageDescription": "Geniş ürün yelpazemizden ihtiyacınıza uygun merdiven çözümünü keşfedin",
-    "featured": "Öne Çıkan",
-    "ctaTitle": "Aradığınız Ürünü Bulamadınız mı?",
-    "ctaDescription": "Özel tasarım ve ölçüye özel üretim hizmetlerimiz ile hayalinizdeki merdiveni gerçeğe dönüştürelim",
-    "ctaButton": "Özel Teklif İste"
+    "featured": "Öne Çıkan"
   },
   "productDetail": {
     "features": "Özellikler",

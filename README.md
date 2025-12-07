@@ -72,7 +72,7 @@ client/
 ## 🎨 Tasarım Sistemi
 
 ### Renk Paleti
-- **Primary:** Turuncu (#f97316) - Vurgu ve CTA butonları
+- **Primary:** Turuncu (#f97316) - Vurgu
 - **Secondary:** Lacivert (#1e293b) - Başlıklar ve footer
 - **Background:** Beyaz (#fafafa) - Ana arka plan
 - **Foreground:** Koyu gri - Metin rengi
